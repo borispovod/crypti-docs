@@ -49,7 +49,7 @@ Do not sent from exchange, Coinbase or any other such managed service.
 
 #### Step two
 Create a new Crypti wallet at:
-http://test.crypti.me
+http://crypti.me:6040
 **NOTE:** make sure to save or write down your password! Without the password, you won’t be able to access the wallet and your Crypti will be lost!
 
 
