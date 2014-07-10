@@ -100,7 +100,6 @@ Any percentage not allocated to the Crypti team will be distributed among the ge
 
 ### Crypti allocation formula
 TB = Total amount of BTC collected via Bter and Maxmint
-M = Total amount of Crypti available
 TC = Total amount of Crypti distributed to buyers
 D = Day of purchase
 B = Amount of Bitcoins sent by a buyer
