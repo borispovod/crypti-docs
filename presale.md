@@ -44,6 +44,8 @@ http://bit.ly/crypti_escrow
 **NOTE:** Make sure to send only from a desktop or web wallet where you control your own keys!
 Do not sent from exchange, Coinbase or any other such managed service.
 
+A transaction can have multiple inputs. If your transaction has multiple inputs then the largest input will be considered as the relevant investment address.
+
 **NOTE 2:** Make sure to remember what address you have used for sending. It is best to label it with some meaningful ID.
 
 
@@ -92,6 +94,23 @@ The Crypti team 0-10% sliding scale will be adjusted based on the amount of BTC 
 * 500 BTC = 0%
 
 Any percentage not allocated to the Crypti team will be distributed among the genesis block buyers.
+
+
+### Crypti allocation formula
+T = Total amount of BTC collected via Bter and Maxmint
+M = Total amount of Crypti available
+TB = Total amount of Crypti distributed to buyers
+D = Day of purchase
+I = Amount of Bitcoins sent by a buyer
+X = Amount of Crypti a buyer receives
+XP = Percentage of the buyer stake in total Crypti distributed
+
+
+_X = I * (1+ (30 - D) / 30 ) / T_
+
+_TB = 75,000,000 + 20,000 * T, maximum 85,000,000 for T equal to or more than 500 BTC_
+
+_XP = TB * X = (75,000,000 + 20,000 * T) * (I * (1+(30 - D) / 30) / T)_
 
 
 ## How does the bonus work
