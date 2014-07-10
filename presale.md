@@ -107,7 +107,6 @@ I = Amount of Bitcoins sent by a buyer
 X = Amount of Crypti a buyer receives
 XP = Percentage of the buyer stake in total Crypti distributed
 
-
 _XP = S * (1+ (30 - D) / 30 ) / T_
 
 _TC = 75,000,000 + 20,000 * T, maximum 85,000,000 for T equal to or more than 500 BTC_
