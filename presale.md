@@ -40,7 +40,7 @@ Once the pre-sale is over, your purchased CRSALE tokens will be converted to Cry
 * Minimum transaction of 0.01 BTC
 
 #### Step one
-Send the amount of BTC you would like to buy Crypti for, to Maxmint BTC address listed here:
+Read the escrow details posted here: http://bit.ly/crypti_escrow. Then, send the amount of BTC you would like to buy Crypti for, to Maxmint BTC address listed here:
 http://bit.ly/crypti_escrow
 
 **NOTE:** Make sure to send only from a desktop or web wallet where you control your own keys!
