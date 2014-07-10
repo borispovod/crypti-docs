@@ -100,10 +100,15 @@ Any percentage not allocated to the Crypti team will be distributed among the ge
 
 ### Crypti allocation formula
 TB = Total amount of BTC collected via Bter and Maxmint
+
 TC = Total amount of Crypti distributed to buyers
+
 D = Day of purchase
+
 B = Amount of Bitcoins sent by a buyer
+
 C = Amount of Crypti a buyer receives
+
 F = Fraction of the buyer stake in total Crypti distributed
 
 _F = B * (1+ (30 - D) / 30 ) / TB_
