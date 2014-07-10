@@ -29,6 +29,8 @@ Deposit BTC to Bter.com (if it’s a new account, or you have an empty balance).
 Browse to Crypti sale on CRSALE / BTC exchange pair, and buy CRSALE tokens in exchange for BTC:
 https://bter.com/trade/crsale_btc
 
+These tokens will be sold on 1:1 ratio to BTC, serving as a proof of the pre-sale purchase. The CRSALE tokens will not be tradeable.
+
 #### Step four
 Once the pre-sale is over, your purchased CRSALE tokens will be converted to Crypti, based on the amount of CRSALE you hold, and the total funds raised on the pre-sale. You could then withdraw them to you Crypti wallet.
 
