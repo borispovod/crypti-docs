@@ -123,7 +123,7 @@ C = Amount of Crypti a buyer receives
 
 F = Fraction of the buyer stake in total Crypti distributed
 
-_F = B * (1+ (30 - D) / 30 ) / TB_
+_F = B * (1+ (30 - D) / 100 ) / TB_
 
 _TC = 75,000,000 + 20,000 * TB, maximum 85,000,000 for TB equal to or more than 500 BTC_
 
