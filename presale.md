@@ -64,6 +64,18 @@ The online issuance system will match your signature against your sending BTC ad
 coins.
 
 
+## Crypti Foundation
+In order to ensure the ongoing Crypti development, marketing and promotion, a Crypti Foundation will be established. The Foundation will consist from members of the launch team, and from the publicly elected community members.
+
+The foundation will control the raised funds in a publicly visible BTC wallet for transparency, and issue spending reports on a monthly fashion. The foundation will also control the vested Crypti of the launch team, and distribute them over the vested schedule.
+
+The BTC funds will be kept in multi-singature enabled wallet, with multiple private keys distributed among the foundation members, for an increased safety of the funds.
+
+The foundation will be eligible to replace it’s members and Crypti employees, based on their performance and public voting.
+
+A detailed Foundation charter will be published for the community review during the pre-sale period.
+
+
 ## Pre-sale details
 
 ### Pre-sale cap
