@@ -111,7 +111,7 @@ Any percentage not allocated to the Crypti team will be distributed among the ge
 
 
 ### Crypti allocation formula
-TB = Total amount of BTC collected via Bter and Maxmint
+TB = Total amount of BTC collected via Bter and Maxmint plus bonus credits
 
 TC = Total amount of Crypti distributed to buyers
 
@@ -127,7 +127,7 @@ _F = B * (1+ (30 - D) / 100 ) / TB_
 
 _TC = 75,000,000 + 20,000 * TB, maximum 85,000,000 for TB equal to or more than 500 BTC_
 
-_C = TC * F = (75,000,000 + 20,000 * TB) * (B * (1+(30 - D) / 30) / TB)_
+_C = TC * F = (75,000,000 + 20,000 * TB) * (B * (1+(30 - D) / 100) / TB)_
 
 
 ## How does the bonus work
