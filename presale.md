@@ -58,10 +58,9 @@ http://crypti.me:6040
 
 
 #### Step three
-Once the pre-sale is over, browse to the online issuance system at http://crypti.me/issue (will be online towards the pre-sale end) and copy the confirmation message posted there. Sign the message with the address you used to send BTC (for example: http://imgur.com/a/nUmZ0), and copy & paste the signature to the online issuance system.
+Once the pre-sale is over, sign your Crypti address with the address you used to send BTC (for example: http://imgur.com/a/nUmZ0), then browse to the online issuance system at http://crypti.me/issue (will be online towards the pre-sale end) and enter both the resulting signature and your Crypti address there.
 
-The online issuance system will match your signature against your sending BTC address. Once matched successfully, the system will ask for your Crypti address, so it can issue the Crypti 
-coins.
+The online issuance system will match your signature against your sending BTC address. Once matched successfully, the system will issue Crypti coins to the provided Crypti address.
 
 
 ## Crypti Foundation
