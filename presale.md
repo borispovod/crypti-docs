@@ -17,7 +17,7 @@ Both these methods are fully escrowed, to ensure the safety of your BTC.
 ### Bter.com
 * Crypti buy fee: 0%
 * Withdrawal fee: 1% + 1 Crypti
-* Supports refunds
+* Enables early trading of XCR tokens
 
 #### Step one
 Register on Bter.com (if you don’t have an account yet), or login.
@@ -131,9 +131,3 @@ _C = TC * F = (75,000,000 + 20,000 * TB) * (B * (1+(30 - D) / 100) / TB)_
 
 ## How does the bonus work
 In order to encourage people not to wait until the last day to invest, an investment structure rewarding early adopters will be used. A bonus of 30% increase in stake will be awarded at the beginning of the pre-sale. The bonus will be applied to the total resulting amount of coins, which will be 75% plus any additional ones from the 10%. This will be continuously reduced by 1% each day over the course of the sale to a final 0% bonus at the end of the sale.
-
-
-## How does the refund work
-Bter.com will enable buyers to refund their CRSALE purchases within the pre-sale period, as per following guidelines:
-* Within the first 20 days of the pre-sale, the entire CRSALE purchases will be refunded
-* Starting 21st day of the pre-sale, 10% of purchased CRSALE will be reserved every day, for Crypti issuance at the end of the pre-sale
