@@ -93,7 +93,7 @@ The total amount of Crypti in existence will be 100 Million. The pre-sale will T
 * 0 - 10% (sliding scale, see below) of the genesis block will be allocated as a part of ongoing payment to the Crypti development team. These Crypti amounts (if any remain) will be released as a development funding mixed with the raised BTC, in ratio that the Foundation will decide upon.
 
 ### Launch team vesting
-The Crypti team allocation will be time-vested according to time-blocks, with release points starting with the mainnet launch and every 3 months afterwards (in coordination with quarterly code releases). Each payout will be approved by the Crypti foundation.
+The Crypti team allocation will be time-vested according to time-blocks, with release points starting with the mainnet launch and every 3 months afterwards (in coordination with quarterly code releases).
 
 
 ### Development Funds / Initial Distribution
