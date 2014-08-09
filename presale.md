@@ -61,7 +61,7 @@ http://crypti.me:6040
 Once the pre-sale is over, sign your BTC Crypti address with the address you used to send BTC (for example: http://imgur.com/a/nUmZ0), then PM Maxmint with following:
 
     -----BEGIN BITCOIN SIGNED MESSAGE-----
-    I hereby confirm that I choose to receive my bought Crypti stake. My Bitcoin address is [your Bitcoin address here]. The transaction ID for my investment to Maxmint's escrow address is [your TX ID here]. I request Maxmint to send all my invested Bitcoins (minus the 1% fee) to Crypti team. Bter will then credit me Crypti stake on my Crypti account.
+    I hereby confirm that I choose to receive my bought Crypti stake. My Crypti account ID is [your Crypti account ID here], my Bitcoin address is [your Bitcoin address here]. The transaction ID for my investment to Maxmint's escrow address is [your TX ID here]. I request Maxmint to send all my invested Bitcoins (minus the 1% fee) to Crypti team. The Crypti team or Maxmint will then credit my Crypti stake on my Crypti account.
     I will no longer be bound to the escrow agreement by Maxmint (located at https://bitcointalk.org/index.php?topic=654463.msg7756916#msg7756916) and I also confirm that Maxint will no longer be bound to this escrow agreement.
     -----BEGIN SIGNATURE-----
     [the message signature here]
