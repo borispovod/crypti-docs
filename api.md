@@ -38,7 +38,7 @@ balance = balance / 100000000
 
 ## 2. API Methods.
 
-## NOTE: This is only a partial list, more methods will be added in the near future.
+# NOTE: This is only a partial list, more methods will be added in the near future.
 
 
 ### 2. 1. Create account.
