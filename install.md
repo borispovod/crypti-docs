@@ -1,6 +1,6 @@
-Crypti Installation on Debian 7/Ubuntu 14
+# Crypti Installation on Debian 7 / Ubuntu 14
 
-## 1. Install Node.js on Debian.
+## 1. Install Node.js
 
 The current version of the node.js package is at:
 
@@ -32,7 +32,7 @@ After it installs, check version of node.js:
 
 *node -v*
 
-## 2. Install npm (Node package manager) on Debian.
+## 2. Install npm (Node package manager)
 
 Package:
 
