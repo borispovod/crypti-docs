@@ -1,5 +1,8 @@
 # Crypti Boot2Docker installation
 
+# NOTE: this functionality is temporary disabled, please do not follow this guide at the moment.
+
+
 ## 1. Install Boot2Docker
 
 1. Browse to [Boot2Docker] (http://boot2docker.io)
