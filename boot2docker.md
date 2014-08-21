@@ -33,7 +33,7 @@
         docker ps
         docker stop CONTAINER_ID <--- The ID returned by docker ps
 
-2. Change the forging password via sed:
+2. Set the forging password via sed:
 
         docker run crypti/node sed -i 's/""/"PASSWORD"/g' src/config.json
          
