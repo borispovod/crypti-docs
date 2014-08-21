@@ -35,7 +35,7 @@
 
 2. Set the forging password via sed:
 
-        docker run crypti/node sed -i 's/""/"PASSWORD"/g' /src/config.json
+        docker run crypti/node sed -i 's/""/"PASSWORD"/g' /src/config.json <--- PASSWORD is your account password
          
 3. Save the change in a new Docker container:
 
