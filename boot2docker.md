@@ -42,7 +42,7 @@
         docker ps -l
         docker commit CONTAINER_ID my/forger <--- The ID returned by docker ps -l
 
-3. Verify that correct password is set correctly, by looking at the "secretPhrase" at the end of config (optional):
+3. Verify that correct password is set correctly, by looking at the "secretPhrase" at the end of config:
 
         docker run my/forger cat src/config.json
 
