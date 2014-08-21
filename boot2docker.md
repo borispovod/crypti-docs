@@ -35,20 +35,20 @@
 
 2. Set the forging password via sed:
 
-        docker run crypti/node sed -i 's/""/"PASSWORD"/g' src/config.json
+        docker run crypti/node sed -i 's/""/"PASSWORD"/g' /src/config.json
          
 3. Save the change in a new Docker container:
 
         docker ps -l
-        docker commit CONTAINER_ID my/forger <--- The ID returned by docker ps -l
+        docker commit CONTAINER_ID myforger <--- The ID returned by docker ps -l
 
 3. Verify that correct password is set correctly, by looking at the "secretPhrase" at the end of the config file:
 
-        docker run my/forger cat src/config.json
+        docker run myforger cat /src/config.json
 
 4. Start the forging node:
 
-        docker run -d -p 6040:6040 my/forger forever /src/app.js
+        docker run -d -p 6040:6040 myforger forever /src/app.js
 
 8. Browse and login to the web wallet, navigate to "Forging" section, and verify that **Forging enabled** appears
 in the top right corner.
