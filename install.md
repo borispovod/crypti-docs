@@ -60,11 +60,11 @@ Unzip it:
 
 *sudo apt-get install unzip*
 
-*unzip cryptibuilded.zip*
+*unzip crypti-linux-0.1.1.zip*
 
 Go to crypti folder:
 
-*cd cryptibuilded*
+*cd 0.1.1*
 
 Run command:
 
