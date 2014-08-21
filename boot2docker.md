@@ -22,7 +22,7 @@
 4. Browse to [http://192.168.59.103:6040] (http://192.168.59.103:6040) in order to access the web wallet
 
 
-## 3. Enable forging
+## 3. (Optional) Enable forging
 
 **Note:** You need to have at least 1000 XCR in the account that you would like to forge with.
 
