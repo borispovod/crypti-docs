@@ -28,7 +28,7 @@
 
 **Note2:** The account can be set only to a single node at a time, and any particular node can forge for a single account only.
 
-1. Stop the running Docker image (if any):
+1. Stop the running Docker image (if running):
 
         docker ps
         docker stop CONTAINER_ID <--- The ID returned by docker ps
