@@ -56,6 +56,5 @@
 
         forever restart app.js
 
-8. Check in logs for message:
-*Forging enabled*
- 
+8. Browse and login to the web wallet, navigate to "Forging" section, and verify that **Forging enabled** appears
+in the top right corner.

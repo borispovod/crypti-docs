@@ -133,8 +133,5 @@ Restart crypti:
 
 *forever restart app.js*
 
-
-Check in logs for message:
-
-"Forging enabled"
- 
+Browse and login to the web wallet, navigate to "Forging" section, and verify that **Forging enabled** appears
+in the top right corner.
