@@ -15,7 +15,7 @@
 
 2. In the console window, type the following command:
 
-        docker run -p 6040:6040 crypti/XXXX
+        docker run -d -p 6040:6040 crypti/node
     
 3. The command will download the latest version of Crypti node from the Docker Hub, and launch it
 
@@ -28,33 +28,27 @@
 
 **Note2:** The account can be set only to a single node at a time, and any particular node can forge for a single account only.
 
-1. Access the Crypti Docker container by connecting via SSH (user = ubuntu, password = XXXX):
+1. Stop the running Docker image (if any):
 
-        ssh 192.168.59.103
+        docker ps
+        docker stop CONTAINER_ID <--- The ID returned by docker ps
 
-2. Change directory to src:
+2. Change the forging password via sed:
 
-        cd src
+        docker run crypti/node sed -i 's/""/"PASSWORD"/g' src/config.json
          
-3. Open config.json
+3. Save the change in a new Docker container:
 
-        nano config.json
+        docker ps -l
+        docker commit CONTAINER_ID my/forger <--- The ID returned by docker ps -l
 
-4. Navigate to the following section:
+3. Verify that correct password is set correctly, by looking at the "secretPhrase" at the end of config (optional):
 
-        "forging": {
-            "secretPhrase" : ""
-        }
+        docker run my/forger cat src/config.json
 
-5. Set the secretPhrase parameter to your account secret phrase.
+4. Start the forging node:
 
-6. Exit and save the file
-
-        Ctrl-X, y
-
-7. Restart Crypti node:
-
-        forever restart app.js
+        docker run -d -p 6040:6040 my/forger forever /src/app.js
 
 8. Browse and login to the web wallet, navigate to "Forging" section, and verify that **Forging enabled** appears
 in the top right corner.
