@@ -1,6 +1,3 @@
-# NOTE: Boot2Docker functionality is temporary disabled, please do not follow this guide at the moment.
-
-
 # Crypti Boot2Docker installation
 
 
