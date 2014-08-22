@@ -1,6 +1,7 @@
-# Crypti Boot2Docker installation
+# NOTE: Boot2Docker functionality is temporary disabled, please do not follow this guide at the moment.
 
-# NOTE: this functionality is temporary disabled, please do not follow this guide at the moment.
+
+# Crypti Boot2Docker installation
 
 
 ## 1. Install Boot2Docker
@@ -25,7 +26,10 @@
 4. Browse to [http://192.168.59.103:6040] (http://192.168.59.103:6040) in order to access the web wallet
 
 
-## 3. Update to latest Crypti Docker version
+# Crypti Boot2Docker maintenance tasks
+
+
+## 1. Update to latest Crypti Docker version
 1. Stop the running Docker image (if running):
 
         docker ps
@@ -40,7 +44,7 @@
         docker run -d -p 6040:6040 crypti/node
 
 
-## 4. (Optional) Enable forging
+## 2. Enable forging
 
 **Note:** You need to have at least 1000 XCR in the account that you would like to forge with.
 
