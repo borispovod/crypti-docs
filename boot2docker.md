@@ -25,7 +25,22 @@
 4. Browse to [http://192.168.59.103:6040] (http://192.168.59.103:6040) in order to access the web wallet
 
 
-## 3. (Optional) Enable forging
+## 3. Update to latest Crypti Docker version
+1. Stop the running Docker image (if running):
+
+        docker ps
+        docker stop CONTAINER_ID <--- The ID returned by docker ps
+        
+2. Pull the latest available version of the Docker image:
+        
+        docker pull crypti/node
+
+3. Start again the Crypti Docker node:
+
+        docker run -d -p 6040:6040 crypti/node
+
+
+## 4. (Optional) Enable forging
 
 **Note:** You need to have at least 1000 XCR in the account that you would like to forge with.
 
