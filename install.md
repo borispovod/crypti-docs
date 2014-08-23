@@ -54,7 +54,9 @@ Check version of npm:
 
 ## 4. Install Crypti.
 
-Upload Crypti archive to server.
+Download Crypti archive to server:
+
+*wget http://downloads.crypti.me/crypti-node/0.1.x/crypti-linux-0.1.3.zip*
 
 Unzip it:
 
