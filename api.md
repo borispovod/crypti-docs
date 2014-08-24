@@ -355,7 +355,17 @@ balance = balance / 100000000
 
 **Parameters**: 
 
-TXT_ID = transaction ID
+<table>
+  <tr>
+    <td>Field</td>
+    <td>Description</td>
+  </tr>
+  <tr>
+    <td>transaction ID</td>
+    <td>String. ID of the transaction</td>
+  </tr>
+</table>
+
 
 **Response:**
 
