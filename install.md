@@ -8,29 +8,29 @@ The current version of the node.js package is at:
 
 Run: 
 
-*sudo apt-get update*
+    sudo apt-get update
 
 To install, run:
 
-*sudo apt-get install nodejs*
+    sudo apt-get install nodejs
 
-*sudo apt-get install nodejs-legacy*
+    sudo apt-get install nodejs-legacy
 
 On debian repositories must be found, on ubuntu if repositories not found:
 
 Use this tutorial to add nodejs ppa repo:
 
-[https://launchpad.net/~chris-lea/+archive/ubuntu/node.](https://launchpad.net/~chris-lea/+archive/ubuntu/node.js-legacy)*[js-legac*y](https://launchpad.net/~chris-lea/+archive/ubuntu/node.js-legacy)
+[https://launchpad.net/~chris-lea/+archive/ubuntu/node.js-legacy](https://launchpad.net/~chris-lea/+archive/ubuntu/node.js-legacy)
 
 Again update your system repositories and install nodejs:
 
-*sudo apt-get update*
+    sudo apt-get update
 
-*sudo apt-get install nodejs*
+    sudo apt-get install nodejs
 
 After it installs, check version of node.js:
 
-*node -v*
+    node -v
 
 ## 2. Install npm (Node package manager)
 
@@ -40,100 +40,134 @@ Package:
 
 To install run:
 
-*sudo apt-get update*
+    sudo apt-get update
+    
+Then:
+   
 
-*sudo apt-get install npm*
+     sudo apt-get install npm
 
 Check version of npm:
 
-*npm -v*
+    npm -v
 
 ## 3.  Install build-essential
 
-*sudo apt-get install build-essential*
+    sudo apt-get install build-essential
 
 ## 4. Install Crypti.
 
 Download Crypti archive to server:
 
-*wget http://downloads.crypti.me/crypti-node/0.1.x/crypti-linux-0.1.3.zip*
+    wget http://downloads.crypti.me/crypti-node/0.1.x/crypti-linux-0.1.5.zip
+
+Install unzip:
+
+    sudo apt-get install unzip
 
 Unzip it:
+   
 
-*sudo apt-get install unzip*
-
-*unzip crypti-linux-0.1.1.zip*
+     unzip crypti-linux-0.1.5.zip
 
 Go to crypti folder:
 
-*cd 0.1.1*
+    cd 0.1.5
 
 Run command:
 
-*npm install*
+    npm install
+Then:
 
-In case you get ed25519 build errors, go to ed25519-node folder:
+    cd
 
-*cd ed25519-node*
+Then install ed25519-node folder:
+
+    npm install https://github.com/dazoe/ed25519/tarball/master
+Then:
+
+    cd node_modules
+
+
+Then:
+
+    cd ed25519
 
 And run:
 
-*node-gyp configure*
+    node-gyp configure
 
 And then:
 
-*node-gyp build*
+    node-gyp build
 
 After it builds, go back to crypti folder and run the installation again:
 
-*npm install*
+    cd
+
+then: 
+
+    cd 0.1.5
+Run:
+
+    npm install
 
 ## 5. Start Crypti
 
 Install node.js process manager:
 
-*sudo npm install -g forever*
+    sudo npm install -g forever
 
 And run crypti:
 
-*forever start app.js*
+    forever start app.js
 
 Crypti process, logs, and etc can be found with the command:
 
-*forever list*
+    forever list
 
 You will see list of working nodejs process with logs and process ids, indexes.
 
 Open the created log file:
 
-*cat logs.log*
+    cat logs.log
 
 Verify that Crypti has started without any errors and synchronized with db.
 
-After it starts,open: [http://serverip:6040/](http://serverip:6040/)
+After it starts,open: [http://serverip:6040/](http://serverip:6040/) <--- Replace "serverip" with Your **Public IP**
 
 Crypti web wallet will be loaded.
 
 
 ## 6. Enable forging
 
-Note: You need to have at least 1000 XCR in the account that you would like to forge with.
-
-Note2: The account can be set only to a single node at a time, and any particular node can forge for a single account only.
+Note: You need to have at least 1000 XCR in the account that you would like to forge with. The account can be set only to a single node at a time, and any particular node can forge for a single account only.
 
 Open config.json
 
-Find the following section:
+    sudo nano config.json
+
+Arrow down untill you find the following section:
 
         "forging": {
-            "secretPhrase" : ""
+          "secretPhrase" : ""
         }
 
 Set the secretPhrase parameter to your account secret phrase.
 
+       "forging": {
+         "secretPhrase" : "YourWalletPassphrase"  <- Replace With your wallets passphrase
+        }
+After you type in your Passphrase Hit:
+
+    Ctrl+ X
+Then: 
+
+    Y 
+
 Restart crypti:
 
-*forever restart app.js*
+    forever restart app.js
 
 Browse and login to the web wallet, navigate to "Forging" section, and verify that **Forging enabled** appears
 in the top right corner.
