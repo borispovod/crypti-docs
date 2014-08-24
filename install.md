@@ -141,7 +141,13 @@ Crypti web wallet will be loaded.
 
 ## 6. Enable forging
 
-Note: You need to have at least 1000 XCR in the account that you would like to forge with. The account can be set only to a single node at a time, and any particular node can forge for a single account only.
+**Note:** You need to have at least 1000 XCR in the account that you would like to forge with.
+
+**Note2:** The account can be set only to a single node at a time, and any particular node can forge for a single account only.
+
+Stop the running Crypti node
+
+    forever stop app.js
 
 Open config.json
 
@@ -167,7 +173,7 @@ Then:
 
 Restart crypti:
 
-    forever restart app.js
+    forever start app.js
 
 Browse and login to the web wallet, navigate to "Forging" section, and verify that **Forging enabled** appears
 in the top right corner.
