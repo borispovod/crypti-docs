@@ -322,7 +322,7 @@ balance = balance / 100000000
       "signSignature": null,
       "confirmations": 15,
       "confirmed": true
-    },
+},
 
 **Unconfirmed transaction:**
 
@@ -342,5 +342,58 @@ balance = balance / 100000000
       "confirmations": "-",
       "recipient": "3364313429379719464C",
       "confirmed": false
+},
 
+
+### 2. 6. Get a particular transaction details
+
+**Url:** */api/getTransaction?transactionId=TXT_ID*
+
+**Method**: *GET*
+
+**Description: **Return the details of the transaction specified by the transaction id.
+
+**Parameters**: 
+
+TXT_ID = transaction ID
+
+**Response:**
+
+<table>
+  <tr>
+    <td>Field</td>
+    <td>Description</td>
+  </tr>
+  <tr>
+    <td>success</td>
+    <td>Boolean. Result of success of operation.</td>
+  </tr>
+  <tr>
+    <td>status</td>
+    <td>String. "OK" or unique error code.</td>
+  </tr>
+  <tr>
+    <td>transaction</td>
+    <td>Array. JSON array of transactions.</td>
+  </tr>
+</table>
+
+
+**Example of transaction: **
+
+{
+      "id": "10345457625055490607",
+      "blockId": "1114347129191230720",
+      "type": 0,
+      "subtype": 0,
+      "timestamp": 1407292194,
+      "senderPublicKey": "9e51284be9f60a367d57b8d9dc40fb7a1e95cdf9c4ba249f4e96809fa05d5982",
+      "sender": "3364313429379719464C",
+      "recipient": "6881298120989278452C",
+      "amount": 1000000000000,
+      "fee": 10000000000,
+      "signature": "980e7f3c3bec4c49e82a0563f5e273a1a737b497c5df1e387616ada9121cfe2d81a86ad6fcdb9cfb6bddae17313669bba8fbf442138b5d789c701c905cd89a0f",
+      "signSignature": null,
+      "confirmations": 15,
+      "confirmed": true
 },
