@@ -41,7 +41,7 @@
         docker run -d -p 6040:6040 crypti/node
 
 
-# We see some issues with forging from Docker, this feature is not guaranteed to work at the moment.
+# We see some issues with forging via Docker, hence this feature is not guaranteed to work at the moment.
 ## 2. Enable forging
 
 **Note:** You need to have at least 1000 XCR in the account that you would like to forge with.
