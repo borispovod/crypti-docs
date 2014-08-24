@@ -345,7 +345,7 @@ balance = balance / 100000000
 },
 
 
-### 2. 6. Get a particular transaction details
+### 2. 6. Get specific transaction details
 
 **Url:** */api/getTransaction?transactionId=TXT_ID*
 
