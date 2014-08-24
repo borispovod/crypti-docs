@@ -75,7 +75,7 @@
 ##3. Access your cloud server from your desktop
 
 You can either **Click this YouTube** below or **Continue** to the next step in writing
-[![IMAGE](http://www.apl.washington.edu/project/lib/images/video/video_thumb_play_icon.png)](http://www.youtube.com/watch?v=5STROm2pk0c)
+[![IMAGE](http://img.youtube.com/vi/5STROm2pk0c/0.jpg)](http://www.youtube.com/watch?v=5STROm2pk0c)
 
 **First download both of these files**
 
