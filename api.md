@@ -200,7 +200,7 @@ balance = balance / 100000000
   </tr>
   <tr>
   <td>amountIsInteger</td>
-  <td>Set to true if you want to set the amount in integer (as in Bitcoin)</td>
+  <td>Boolean. Set to true if you want to specify amount in integer (as in Bitcoin). Default is false. Optional.</td>
   <td>
   </tr>
 </table>
