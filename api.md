@@ -198,7 +198,7 @@ balance = balance / 100000000
   </tr>
   <tr>
   <td>amountIsInteger</td>
-  <td>Boolean. Set to true if you want to set amount in integer.</td>
+  <td>Boolean. Set to true if you want to set amount in integer. Default to false. Optional.</td>
   <td>
   </tr>
 </table>
