@@ -182,7 +182,9 @@ balance = balance / 100000000
   </tr>
   <tr>
     <td>amount</td>
-    <td>Float/Integer. Amount to be sent. If amountIsInteger equal true integer (like bitcoin method). Another way float.</td>
+    <td>Float/Integer. Amount to be sent.
+        If amountIsInteger is true treat as integer, otherwise float.
+    </td>
   </tr>
   <tr>
     <td>recipient</td>
@@ -198,7 +200,7 @@ balance = balance / 100000000
   </tr>
   <tr>
   <td>amountIsInteger</td>
-  <td>Use if you want to set amount in integer</td>
+  <td>Set to true if you want to set the amount in integer (as in Bitcoin)</td>
   <td>
   </tr>
 </table>
