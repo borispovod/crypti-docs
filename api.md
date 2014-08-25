@@ -4,7 +4,7 @@
 
 Crypti works on port 6040. All API methods have prefix: */api*. 
 
-Like: */api/sometMethod*
+Like: */api/someMethod*
 
 API methods response format - JSON.
 
@@ -182,7 +182,7 @@ balance = balance / 100000000
   </tr>
   <tr>
     <td>amount</td>
-    <td>Float. Amount to be sent.</td>
+    <td>Float/Integer. Amount to be sent. If amountIsInteger equal true integer (like bitcoin method). Another wayfloat.</td>
   </tr>
   <tr>
     <td>recipient</td>
@@ -195,6 +195,11 @@ balance = balance / 100000000
   <tr>
     <td>secondPhrase</td>
     <td>String. Second signature of account. Use only if you added second signature and this signature is confirmed. Optional.</td>
+  </tr>
+  <tr>
+  <td>amountIsInteger</td>
+  <td>Use if you want to set amount in integer</td>
+  <td>
   </tr>
 </table>
 
