@@ -53,7 +53,7 @@ A transaction can have multiple inputs. If your transaction has multiple inputs 
 
 #### Step two
 Create a new Crypti wallet at:
-https://crypti.me:7040
+https://wallet.crypti.me
 
 **NOTE:** make sure to save or write down your password! Without the password, you won’t be able to access the wallet and your Crypti will be lost!
 
