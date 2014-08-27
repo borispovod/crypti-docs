@@ -169,7 +169,10 @@ balance = balance / 100000000
 
 **Description:** Send Crypti to another account. Fee will be calculated and applied automatically.
 
+**Important:** Use json in body requests. And set Content-Type header to application/json.
+
 **Parameters**: 
+
 
 <table>
   <tr>
