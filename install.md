@@ -65,11 +65,11 @@ Install unzip:
 Unzip it:
    
 
-     unzip crypti-linux-0.1.6.zip
+     unzip crypti-linux-0.1.6b.zip
 
 Go to crypti folder:
 
-    cd 0.1.6
+    cd 0.1.6b
 
 Run command:
 
@@ -98,7 +98,7 @@ After it builds, go back to crypti folder and run the installation again:
 
 then: 
 
-    cd 0.1.6
+    cd 0.1.6b
 Run:
 
     npm install
