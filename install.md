@@ -2,9 +2,7 @@
 
 ## 1. Install Node.js
 
-The current version of the node.js package is at:
-
-[https://packages.debian.org/ru/wheezy-backports/nodejs](https://packages.debian.org/ru/wheezy-backports/nodejs)
+The current version of the node.js package is [here](https://packages.debian.org/ru/wheezy-backports/nodejs)
 
 Run: 
 
@@ -18,9 +16,10 @@ To install, run:
 
 On debian repositories must be found, on ubuntu if repositories not found:
 
-Use this tutorial to add nodejs ppa repo:
+You must add the [nodejs ppa repo:](https://launchpad.net/~chris-lea/+archive/ubuntu/node.js-legacy)
+Use this command
 
-[https://launchpad.net/~chris-lea/+archive/ubuntu/node.js-legacy](https://launchpad.net/~chris-lea/+archive/ubuntu/node.js-legacy)
+    sudo apt-add-repository ppa:chris-lea/node.js-legacy
 
 Again update your system repositories and install nodejs:
 
@@ -34,9 +33,7 @@ After it installs, check version of node.js:
 
 ## 2. Install npm (Node package manager)
 
-Package:
-
-[https://packages.debian.org/unstable/main/npm](https://packages.debian.org/unstable/main/npm)
+[Package:](https://packages.debian.org/unstable/main/npm)
 
 To install run:
 
@@ -68,22 +65,16 @@ Install unzip:
 Unzip it:
    
 
-     unzip crypti-linux-0.1.5.zip
+     unzip crypti-linux-0.1.6.zip
 
 Go to crypti folder:
 
-    cd 0.1.5
+    cd 0.1.6
 
 Run command:
 
     npm install
-Then:
 
-    cd
-
-Then install ed25519-node folder:
-
-    npm install https://github.com/dazoe/ed25519/tarball/master
 Then:
 
     cd node_modules
@@ -107,7 +98,7 @@ After it builds, go back to crypti folder and run the installation again:
 
 then: 
 
-    cd 0.1.5
+    cd 0.1.6
 Run:
 
     npm install
