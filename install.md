@@ -56,7 +56,7 @@ Check version of npm:
 
 Download Crypti archive to server:
 
-    wget http://downloads.crypti.me/crypti-node/0.1.x/crypti-linux-0.1.6b.zip
+    wget http://downloads.crypti.me/crypti-node/0.1.x/crypti-linux-0.1.6c.zip
 
 Install unzip:
 
@@ -65,11 +65,11 @@ Install unzip:
 Unzip it:
    
 
-     unzip crypti-linux-0.1.6b.zip
+     unzip crypti-linux-0.1.6c.zip
 
 Go to crypti folder:
 
-    cd 0.1.6b
+    cd 0.1.6c
 
 Run command:
 
@@ -98,7 +98,7 @@ After it builds, go back to crypti folder and run the installation again:
 
 then: 
 
-    cd 0.1.6b
+    cd 0.1.6c
 Run:
 
     npm install
@@ -108,6 +108,10 @@ Run:
 Install node.js process manager:
 
     sudo npm install -g forever
+    
+Then if you would like use a recent official Crypti block-chain snapshot use this:
+
+    wget https://www.dropbox.com/s/xer6cz5kr0mgcs7/blockchain.db
 
 And run crypti:
 
