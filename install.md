@@ -111,7 +111,7 @@ Install node.js process manager:
     
 Then if you would like use a recent official Crypti block-chain snapshot use this:
 
-    wget https://www.dropbox.com/s/xer6cz5kr0mgcs7/blockchain.db
+    wget http://downloads.crypti.me/crypti-node/blockchains/blockchain.db
 
 And run crypti:
 
