@@ -63,7 +63,7 @@ Then in the Left column click  [SSH Keys](http://the.earth.li/~sgtatham/putty/la
 
     Ubuntu Server 14.04 x64
 
- **Add SSH Keys: **   
+ **Add SSH Keys:**   
 
      Select Key you just made
      
