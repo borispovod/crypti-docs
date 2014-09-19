@@ -44,6 +44,7 @@ Then in the Left column click  [SSH Keys](http://the.earth.li/~sgtatham/putty/la
     Add SSH Keys
 
 **Label your key**
+
 **Paste in the long string of characters in the big open Box**
 **Then click**
 
@@ -76,6 +77,7 @@ Then in the Left column click  [SSH Keys](http://the.earth.li/~sgtatham/putty/la
 ##4. Access your cloud server from your desktop
 
 Now open **PuTTY**
+
 **In the PuTTY window on the left hand side Click**
    
 
@@ -108,7 +110,7 @@ Now open **PuTTY**
      IP address
 
 
-**In the PuTTY window in the Host name (IP address) box **
+**In the PuTTY window in the Host name (IP address) box**
 
     Past your IP address
 
