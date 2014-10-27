@@ -79,7 +79,7 @@ balance = balance / 100000000
     <td>String. "OK" or unique error code.</td>
   </tr>
   <tr>
-    <td>secondPassphrase</td>
+    <td>secondPhrase</td>
     <td>Boolean. true if account working with second passphrase, false if account doesn’t have second passphrase.</td>
   </tr>
   <tr>
