@@ -21,15 +21,18 @@ Use this command
 
     sudo apt-add-repository ppa:chris-lea/node.js-legacy
 
-Again update your system repositories and install nodejs:
+Again update your system repositories and install nodejs/sqlite3:
 
     sudo apt-get update
 
     sudo apt-get install nodejs
+    
+    sudo apt-get install sqlite3
 
-After it installs, check version of node.js:
+After it installs, check version of node.js/sqlite3:
 
     node -v
+    sqlite3 -v
 
 ## 2. Install npm (Node package manager)
 
