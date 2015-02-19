@@ -68,7 +68,7 @@ Install unzip:
 Unzip it:
    
 
-     unzip crypti-linux-0.1.9a.zip
+     unzip 0.1.9a.zip
 
 Go to crypti folder:
 
