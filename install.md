@@ -59,7 +59,7 @@ Check version of npm:
 
 Download Crypti archive to server:
 
-    wget http://downloads.crypti.me/crypti-node/0.1.x/0.1.9d.zip
+    wget http://downloads.crypti.me/crypti-node/0.1.x/0.1.9f.zip
 
 Install unzip:
 
@@ -68,43 +68,16 @@ Install unzip:
 Unzip it:
    
 
-     unzip 0.1.9d.zip
+     unzip 0.1.9f.zip
 
 Go to crypti folder:
 
-    cd 0.1.9d
+    cd 0.1.9f
 
 Run command:
 
     npm install
 
-Then:
-
-    cd node_modules
-
-
-Then:
-
-    cd ed25519
-
-And run:
-
-    node-gyp configure
-
-And then:
-
-    node-gyp build
-
-After it builds, go back to crypti folder and run the installation again:
-
-    cd
-
-then: 
-
-    cd 0.1.9d
-Run:
-
-    npm install
 
 ## 5. Start Crypti
 
