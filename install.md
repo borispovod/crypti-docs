@@ -85,15 +85,6 @@ Install node.js process manager:
 
     sudo npm install -g forever
     
-Then if you would like use a recent official Crypti block-chain snapshot use this:
-
-    wget http://downloads.crypti.me/blockchains/blockchain.db.zip
-    
-Unzip it:
-   
-
-     unzip blockchain.db.zip
-
 And run crypti:
 
     forever start app.js
@@ -104,22 +95,17 @@ Crypti process, logs, and etc can be found with the command:
 
 You will see list of working nodejs process with logs and process ids, indexes.
 
-Open the created log file:
-
-    cat logs.log
-
 Verify that Crypti has started without any errors and synchronized with db.
 
-After it starts,open: [http://serverip:6040/](http://serverip:6040/) <--- Replace "serverip" with Your **Public IP**
+After it starts,open: [http://serverip:8040/](http://serverip:8040/) <--- Replace "serverip" with Your **Public IP**
 
 Crypti web wallet will be loaded.
 
 
 ## 6. Enable forging
 
-**Note:** You need to have at least 1000 XCR in the account that you would like to forge with.
+**Note:** You may enable forging through the wallet or choose to have it automatically enable foring everytime the wallet is started. To have this process automated, follow the steps below.
 
-**Note2:** The account can be set only to a single node at a time, and any particular node can forge for a single account only.
 
 Stop the running Crypti node
 
@@ -132,14 +118,26 @@ Open config.json
 Arrow down untill you find the following section:
 
         "forging": {
-          "secretPhrase" : ""
+          "secret" : [""]
         }
 
-Set the secretPhrase parameter to your account secret phrase.
+Set the secret parameter to your account secret phrase.
 
        "forging": {
-         "secretPhrase" : "YourWalletPassphrase"  <- Replace With your wallets passphrase
-        }
+         "secret" : ["YourWalletPassphrase"]  <- Replace With your wallets passphrase
+
+In the forging section you will also see an Access line, this is used to allow only your IP access to enable forging through the wallet.
+
+       "access": {
+                        "whiteList": ["127.0.0.1"]  <- Replace With your IP which you will use to access your wallet
+
+To set 2 accounts to forge on a single node, enter both account passphrases like below.
+
+       "forging": {
+         "secret" : ["YourWalletPassphrase1","YourWalletPassphrase2"]  <- Replace With your wallets passphrase
+         "access": {
+                        "whiteList": ["127.0.0.1"]
+}
 After you type in your Passphrase Hit:
 
     Ctrl+ X
@@ -151,5 +149,5 @@ Restart crypti:
 
     forever start app.js
 
-Browse and login to the web wallet, navigate to "Forging" section, and verify that **Forging enabled** appears
-in the top right corner.
+Browse and login to the web wallet, navigate to "Forging" section, and verify that **Stop Forging** appears
+in the top right corner. This shows that you are already forging.
