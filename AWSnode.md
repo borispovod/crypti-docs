@@ -43,7 +43,7 @@
     Add Rule
 **In the box in the 3rd column Type**
 
-    6040
+    8040
 **In the box in the 4rd column Select**
 
     Anywhere
