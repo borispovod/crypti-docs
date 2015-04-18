@@ -84,7 +84,14 @@ Run command:
 Install node.js process manager:
 
     sudo npm install -g forever
-    
+ 
+ Next synchronize your server clock :
+
+    sudo service ntp stop
+    sudo ntpdate pool.ntp.org
+    sudo service ntp start
+**Note:** Some systems don't have ntp running so you may get the message "ntp: unrecognized service" This is ok just continue with next command
+
 And run crypti:
 
     forever start app.js
