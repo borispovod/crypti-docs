@@ -26,7 +26,7 @@
 
 *Note:* You will notice the **Default** setting is to **Automatically** find and **Connect** to the **Best** peer available.
 
-**Once the Wallet has found a peer you will see window below** (At this point your Wallet is 100% Setup, if you what to Customize it follow the below steps, otherwise continue on to Step 3)
+**Once the Wallet has found a peer you will see window below**
 
 <a href="url"><img src="http://i.imgur.com/AV8t6Qy.png" align="center" height="300" width="400" ></a>
 
@@ -74,7 +74,7 @@
 
 <a href="url"><img src="http://i.imgur.com/IabkmYX.png" align="center" height="300" width="250" ></a>
 
-###By this point you should have Installed the Wallet, Synchronizing your clock to Server Time and the Crypti Lite Wallet is fully functioning.
+###By this point you should have Installed the Wallet, Synchronizing your clock to Server Time and have a fully functioning Crypti Lite Wallet.
 ----------
 
 ##4. Troubleshooting
