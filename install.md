@@ -59,7 +59,7 @@ Check version of npm:
 
 Download Crypti archive to server:
 
-    wget http://downloads.crypti.me/crypti-node/0.2.x/0.2.0.zip
+    wget http://downloads.crypti.me/crypti-node/0.2.x/0.2.0a.zip
 
 Install unzip:
 
@@ -68,11 +68,11 @@ Install unzip:
 Unzip it:
    
 
-     unzip 0.2.0.zip
+     unzip 0.2.0a.zip
 
 Go to crypti folder:
 
-    cd 0.2.0
+    cd 0.2.0a
 
 Run command:
 
