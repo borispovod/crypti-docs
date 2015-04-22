@@ -73,7 +73,7 @@ Open **PuTTYgen**
  <a href="url"><img src="http://i.imgur.com/W976hQs.png" align="center" height="500" width="400" ></a>
 
  **Enable Private Network**   
-*This will allow you to synchronize faster with your other notes, however it's optional and not required to run a Crypti node*
+*This will allow you to synchronize faster with your other nodes, however it's optional and not required to run a Crypti node*
 
  **Select the SSH Key you just made**
 
