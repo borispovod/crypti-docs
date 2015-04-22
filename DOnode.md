@@ -119,7 +119,7 @@ In that same box in front of your **IP address** Type
     root@
 **It should look like this with a space**
 
-    root@ 54-111-111-11
+    root@ 54.111.111.11
 Note: having **"root@"** typed before your IP automatically logs you in as root
 
 **Then Click**
