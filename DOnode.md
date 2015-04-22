@@ -37,7 +37,7 @@ Open **PuTTYgen**
 
 **Now go back to your DO account in your web browser**
 
-Then in the Left column click  [SSH Keys](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
+Then in the Left column click SSH Keys
 
 **Then click**
 
