@@ -59,7 +59,7 @@ Check version of npm:
 
 Download Crypti archive to server:
 
-    wget http://downloads.crypti.me/crypti-node/0.2.x/0.2.0a.zip
+    wget http://downloads.crypti.me/crypti-node/0.3.x/0.3.x.zip
 
 Install unzip:
 
@@ -68,11 +68,11 @@ Install unzip:
 Unzip it:
    
 
-     unzip 0.2.0a.zip
+     unzip 0.3.x.zip
 
 Go to crypti folder:
 
-    cd 0.2.0a
+    cd 0.3.x
 
 Run command:
 
@@ -158,3 +158,4 @@ Restart crypti:
 
 Browse and login to the web wallet, navigate to "Forging" section, and verify that **Stop Forging** appears
 in the top right corner. This shows that you are already forging.
+
