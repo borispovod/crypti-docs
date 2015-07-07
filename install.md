@@ -144,7 +144,7 @@ To set 2 accounts to forge on a single node, enter both account passphrases like
          "secret" : ["YourWalletPassphrase1","YourWalletPassphrase2"]  <- Replace With your wallets passphrase
          "access": {
                         "whiteList": ["127.0.0.1"]
-}
+	}
 After you type in your Passphrase Hit:
 
     Ctrl+ X
@@ -173,14 +173,13 @@ Open config.json
 
 Arrow down untill you find the following section:
 
-   "ssl": {
-    "enabled": false,   < Change FROM false TO true
-        "options": {
-    	"port": 443,    < Default SSL Port    
-    	"address": "0.0.0.0",   < Change only if you wish to block web access to the node
-    	"key": "path_to_key",   < Replace FROM path_to_key TO actual path to key file
-    	"cert": "path_to_cert"  < Replace FROM path_to_cert TO actual path to certificate file
-    	}
+	"ssl": {
+		"enabled": false,   < Change FROM false TO true
+		"options": {
+			"port": 443,    < Default SSL Port    
+			"address": "0.0.0.0",   < Change only if you wish to block web access to the node					"key": "path_to_key",   < Replace FROM path_to_key TO actual path to key file
+			"cert": "path_to_cert"  < Replace FROM path_to_cert TO actual path to certificate file
+		}
 	}
 
 After you are done, save changes and exit: 
