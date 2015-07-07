@@ -177,7 +177,8 @@ Arrow down untill you find the following section:
 		"enabled": false,   < Change FROM false TO true
 		"options": {
 			"port": 443,    < Default SSL Port    
-			"address": "0.0.0.0",   < Change only if you wish to block web access to the node					"key": "path_to_key",   < Replace FROM path_to_key TO actual path to key file
+			"address": "0.0.0.0",   < Change only if you wish to block web access to the node	
+			"key": "path_to_key",   < Replace FROM path_to_key TO actual path to key file
 			"cert": "path_to_cert"  < Replace FROM path_to_cert TO actual path to certificate file
 		}
 	}
