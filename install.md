@@ -159,3 +159,44 @@ Restart crypti:
 Browse and login to the web wallet, navigate to "Forging" section, and verify that **Stop Forging** appears
 in the top right corner. This shows that you are already forging.
 
+## 7. Enable Secure Sockets Layer (SSL)
+
+**Note:** To complete this step you require a signed certificate (by a CA)  and a public and private key pair
+
+Stop the running Crypti node
+
+    forever stop app.js
+
+Open config.json
+
+    sudo nano config.json
+
+Arrow down untill you find the following section:
+
+   "ssl": {
+    "enabled": false,   < Change FROM false TO true
+        "options": {
+    	"port": 443,    < Default SSL Port    
+    	"address": "0.0.0.0",   < Change only if you wish to block web access to the node
+    	"key": "path_to_key",   < Replace FROM path_to_key TO actual path to key file
+    	"cert": "path_to_cert"  < Replace FROM path_to_cert TO actual path to certificate file
+    	}
+	}
+
+After you are done, save changes and exit: 
+
+    Ctrl+ X
+    
+Then confirm saving: 
+
+    Y 
+
+**Note:** If SSL Port configured above (ssl > options > port) is within well known ports range (below 1024), you must start crypti using admin rights:
+
+    sudo forever start app.js
+    
+Else, if port is above 1023, you restart crypti regulary:
+
+    forever start app.js
+
+Browse to the web wallet. You should now be able to use a secured connection 
