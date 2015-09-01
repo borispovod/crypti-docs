@@ -76,7 +76,7 @@ Go to crypti folder:
 
 Run command:
 
-    npm install
+    npm install --production
 
 
 ## 5. Start Crypti
