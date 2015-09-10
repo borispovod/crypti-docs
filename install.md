@@ -200,3 +200,36 @@ Else, if port is above 1023, you restart crypti regulary:
     forever start app.js
 
 Browse to the web wallet. You should now be able to use a secured connection 
+
+# Autostart
+
+To automatically launch crypti each time your server restarts:
+
+1. Edit your crontab file (replacing ```<user>``` with your own).
+
+  ```crontab -u <user> -e```
+
+2. Select an editor to open your crontab file with.
+
+  ```
+  Select an editor. To change later, run 'select-editor'.
+    1. /bin/ed
+    2. /bin/nano    <---- easiest
+  ```
+
+  Choose nano (option 2) and and press enter to continue.
+
+3. Append the following text to your crontab file.
+
+  ```@reboot <forever_path> start <crypti_path>/app.js```
+
+  1. Replace ```<forever_path>``` with the path to the forever command on your system.  
+  For example: ```/usr/bin/forever``` on Ubuntu/Debian based operating systems.
+  
+  2. Replace ```<crypti_path>``` with your crypti installation path. For example: ```/home/user/crypti```.
+
+4. Save your crontab file by pressing ```ctrl+o``` and ```ctrl+x``` to exit.
+
+5. Reload cron for your changes to take effect (replacing ```<user>``` with your own).
+
+  ```crontab -u <user> -l```
