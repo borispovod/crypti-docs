@@ -59,7 +59,7 @@ Check version of npm:
 
 Download Crypti archive to server:
 
-    wget http://downloads.crypti.me/crypti-node/0.3.x/0.3.0.zip
+    wget http://downloads.crypti.me/crypti-node/0.3.x/0.3.1.zip
 
 Install unzip:
 
@@ -68,11 +68,11 @@ Install unzip:
 Unzip it:
    
 
-     unzip 0.3.0.zip
+     unzip 0.3.1.zip
 
 Go to crypti folder:
 
-    cd 0.3.0
+    cd 0.3.1
 
 Run command:
 
@@ -233,3 +233,21 @@ To automatically launch crypti each time your server restarts:
 5. Reload cron for your changes to take effect (replacing ```<user>``` with your own).
 
   ```crontab -u <user> -l```
+
+# Troubleshoot
+
+If it appears that *forever*, *nodejs* or *your home folder* has been deleted during an update process from an earlier Crypti version, the following errors can occur. 
+
+* ```bash: /usr/local/bin/forever: No such file or directory```
+* ```npm ERR! cb() never called!```
+* ```npm ERR! not ok code 0```
+
+You have to make sure that your old Crypti client isn't running anymore. Then follow the these steps:
+
+  1. Run ```sudo apt-get clean```
+  2. Run ```sudo apt-get update```
+  3. Follow the installation guide again (just don't re-install forever!)
+  4. Run ```sudo npm cache clear```
+  5. Run ```sudo npm install -g forever```
+
+Your problem should be fixed now.
