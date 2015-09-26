@@ -36,7 +36,7 @@ After it installs, check version of node.js/sqlite3:
     
 Nodejs should have the following version number: ```v0.10.25``` 
 
-Sqlite3 should have the following version number or higher: ```3.8.7.4```
+Sqlite3 should have the following version number: ```3.8.2```
 
 ## 2. Install npm (Node package manager)
 
