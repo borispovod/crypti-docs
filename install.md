@@ -50,6 +50,8 @@ Then:
 Check version of npm:
 
     npm -v
+    
+Npm should have the following version number: ```1.3.10```
 
 ## 3.  Install build-essential
 
