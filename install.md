@@ -203,36 +203,27 @@ Browse to the web wallet. You should now be able to use a secured connection
 
 # Autostart
 
-To automatically launch crypti each time your server restarts:
+To automatically launch Crypti each time your server restarts:
 
-1. Edit your crontab file (replacing ```<user>``` with your own).
+1. Install forever-service, a Linux tool which automatically launches Node.js scripts after a server restart. 
 
-  ```crontab -u <user> -e```
+  ```sudo npm install forever-service```
 
-2. Select an editor to open your crontab file with.
+2. Go to your Crypti folder and run:
 
-  ```
-  Select an editor. To change later, run 'select-editor'.
-    1. /bin/ed
-    2. /bin/nano    <---- easiest
-  ```
+  ```forever-service install crypti```
 
-  Choose nano (option 2) and and press enter to continue.
+3. Now you can start, stop and restart Crypti with the following commands. 
 
-3. Append the following text to your crontab file.
+    Start:  ```sudo start crypti```
 
-  ```@reboot <forever_path> start <crypti_path>/app.js```
+    Stop:  ```sudo stop crypti```
 
-  1. Replace ```<forever_path>``` with the path to the forever command on your system.  
-  For example: ```/usr/bin/forever``` on Ubuntu/Debian based operating systems.
-  
-  2. Replace ```<crypti_path>``` with your crypti installation path. For example: ```/home/user/crypti```.
+    Restart:  ```sudo restart crypti```
 
-4. Save your crontab file by pressing ```ctrl+o``` and ```ctrl+x``` to exit.
+    Get the status of the forever process:  ```sudo status crypti```
 
-5. Reload cron for your changes to take effect (replacing ```<user>``` with your own).
-
-  ```crontab -u <user> -l```
+**Note:** If you install forever-service and want to use it, you don't have to start Crypti with the command ```sudo forever start app.js``` anymore!
 
 # Troubleshoot
 
