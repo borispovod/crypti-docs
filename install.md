@@ -63,7 +63,7 @@ Npm should have the following version number: ```1.3.10```
 
 Download Crypti archive to server:
 
-    wget http://downloads.crypti.me/crypti-node/0.3.x/0.3.1.zip
+    wget http://downloads.crypti.me/crypti-node/0.3.x/0.3.2.zip
 
 Install unzip:
 
@@ -71,11 +71,11 @@ Install unzip:
 
 Unzip it:
    
-     unzip 0.3.1.zip
+     unzip 0.3.2.zip
 
 Go to the Crypti folder:
 
-    cd 0.3.1
+    cd 0.3.2
 
 Run command:
 
