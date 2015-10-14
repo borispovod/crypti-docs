@@ -178,7 +178,7 @@ To automatically launch Crypti each time your server restarts:
 
 1. Install forever-service, a Linux tool which automatically launches Node.js scripts after a server restart. 
 
-  ```sudo npm install forever-service```
+  ```sudo npm install forever-service -g```
 
 2. Go to your Crypti folder and run:
 
