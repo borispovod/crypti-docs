@@ -1,63 +1,32 @@
 # Crypti Installation on Debian 7 / Ubuntu 14
 
-## 1. Install Node.js
-
-The current version of the node.js package is [here](https://packages.debian.org/ru/wheezy-backports/nodejs).
-
-Run: 
+## 1.  Install Build Essentials
 
     sudo apt-get update
+    sudo apt-get install build-essential
 
-To install, run:
+## 2.  Install SQLite
 
-    sudo apt-get install nodejs
-
-    sudo apt-get install nodejs-legacy
-
-On debian repositories must be found, on ubuntu if repositories not found:
-
-You must add the [nodejs ppa repo:](https://launchpad.net/~chris-lea/+archive/ubuntu/node.js-legacy)
-Use this command:
-
-    sudo apt-add-repository ppa:chris-lea/node.js-legacy
-
-Again update your system repositories and install nodejs/sqlite3:
-
-    sudo apt-get update
-
-    sudo apt-get install nodejs
-    
     sudo apt-get install sqlite3
 
-After it installs, check version of node.js/sqlite3:
+After it installs, check version of sqlite3:
+
+    sqlite3 -version
+
+Sqlite3 should have the following version number:
+
+- `3.7.13` on Debian 7
+- `3.8.2` on Ubuntu 14
+
+## 3. Install Node.js
+
+After it installs, check version of node.js/npm:
 
     node -v
-    sqlite3 -version
-    
-Nodejs should have the following version number: ```v0.10.25``` 
-Sqlite3 should have the following version number: ```3.8.2```
-
-## 2. Install npm (Node package manager)
-
-[Package:](https://packages.debian.org/unstable/main/npm)
-
-To install run:
-
-    sudo apt-get update
-    
-Then:
-
-     sudo apt-get install npm
-
-Check version of npm:
-
     npm -v
-    
-Npm should have the following version number: ```1.3.10```
 
-## 3.  Install build-essential
-
-    sudo apt-get install build-essential
+Nodejs should have the following version number: ```v0.10.40``` 
+Npm should have the following version number: ```1.4.28```
 
 ## 4. Install Crypti
 
@@ -81,14 +50,13 @@ Run command:
 
     npm install --production
 
-
 ## 5. Start Crypti
 
 Install node.js process manager:
 
     sudo npm install -g forever
  
- Next synchronize your server clock:
+Next synchronize your server clock:
 
     sudo service ntp stop
     sudo ntpdate pool.ntp.org
