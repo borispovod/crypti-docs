@@ -25,8 +25,8 @@ After it installs, check version of node.js/npm:
     node -v
     npm -v
 
-Nodejs should have the following version number: ```v0.10.40``` 
-Npm should have the following version number: ```1.4.28```
+- Nodejs should have the following version number: ```v0.10.40``` 
+- Npm should have the following version number: ```1.4.28```
 
 ## 4. Install Crypti
 
@@ -80,7 +80,7 @@ After it starts, open: [http://serverip:8040/](http://serverip:8040/) <--- Repla
 
 Crypti web client will be loaded.
 
-## 6. Enable forging
+## 6. Enable Forging
 
 **Note:** You may enable forging through the client or choose to have it automatically enable forging everytime the client started. To have this process automated, follow the steps below.
 
@@ -196,7 +196,7 @@ To automatically launch Crypti each time your server restarts:
 
 **Note:** If you install forever-service and want to use it, you don't have to start Crypti with the command ```sudo forever start app.js``` anymore!
 
-# Troubleshoot
+# Troubleshooting
 
 If it appears that *forever*, *nodejs* or *your home folder* has been deleted during an update process from an earlier Crypti version, the following errors can occur. 
 
