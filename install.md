@@ -20,6 +20,9 @@ Sqlite3 should have the following version number:
 
 ## 3. Install Node.js
 
+    curl -sL https://deb.nodesource.com/setup_0.10 | sudo -E bash -
+    sudo apt-get install -y nodejs
+
 After it installs, check version of node.js/npm:
 
     node -v
