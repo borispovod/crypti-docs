@@ -1,1 +1,0 @@
-# Crypti official documents repository
