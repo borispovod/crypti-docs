@@ -127,7 +127,7 @@ You will see list of working Node.js processes with logs, process ids and indexe
 
 Verify that Crypti has started without any errors and synchronized with the db.
 
-After it starts, open: [http://server_ip:8040/](http://server_ip:8040/), replacing **server_ip** with your public IP address.
+After it starts, open: [http://server_ip:8040/](http://server_ip:8040/), replace **server_ip** with your public IP address.
 
 The Crypti web client should launch successfully.
 

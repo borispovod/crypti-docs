@@ -32,7 +32,7 @@ sudo docker run -d --restart=always -p 0.0.0.0:8040:8040 cryptichain/node
 
 Upon successful completion, you will have a running Crypti node with an up-to-date snapshot of the blockchain. The container is configured to automatically restart upon reboot of the server or any occurrence of an error.
 
-To access the Crypti web client, open: [http://server_ip:8040/](http://server_ip:8040/), replacing **server_ip** with your public IP address.
+To access the Crypti web client, open: [http://server_ip:8040/](http://server_ip:8040/), replace **server_ip** with your public IP address.
 
 The Crypti web client should launch successfully.
 
@@ -46,7 +46,7 @@ Get the docker container id:
 sudo docker ps -a
 ```
 
-Open a bash prompt on the docker container (replacing **[container_id]** with your own id):
+Open a bash prompt on the docker container (replace **[container_id]** with your own id):
 
 ```
 sudo docker exec -it [container_id] /bin/bash
@@ -101,7 +101,7 @@ Exit the docker container:
 exit
 ```
 
-Restart the docker container (replacing **[container_id]** with your own id)::
+Restart the docker container (replace **[container_id]** with your own id)::
 
 ```
 sudo docker restart [container_id]
