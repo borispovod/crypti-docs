@@ -8,7 +8,7 @@ This tutorial describes how to install the Crypti - Delegate and Developer Editi
 
 ```
 sudo apt-get update
-sudo apt-get install curl build-essential wget unzip
+sudo apt-get install curl build-essential python wget unzip
 ```
 
 ## 2. Install SQLite3
