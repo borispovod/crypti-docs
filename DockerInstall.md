@@ -55,7 +55,7 @@ sudo docker exec -it [container_id] /bin/bash
 Open config.json:
 
 ```
-sudo nano config.json
+export TERM=xterm; sudo nano config.json
 ```
 
 Arrow down until you find the following section:
@@ -101,7 +101,7 @@ Exit the docker container:
 exit
 ```
 
-Restart the docker container (replace **[container_id]** with your own id)::
+Restart the docker container (replace **[container_id]** with your own id):
 
 ```
 sudo docker restart [container_id]
