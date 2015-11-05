@@ -101,7 +101,7 @@ Exit the docker container:
 exit
 ```
 
-Restart the docker container (replace **[container_id]** with your own id)::
+Restart the docker container (replace **[container_id]** with your own id):
 
 ```
 sudo docker restart [container_id]
