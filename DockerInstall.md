@@ -59,7 +59,7 @@ docker stats [container_id]
 To monitor the log file of a docker container:
 
 ```
-docker logs -f [container_id]
+docker logs --tail=500 -f [container_id]
 ```
 
 To stop/restart/start a docker container:
