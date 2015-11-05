@@ -56,6 +56,20 @@ To monitor the status of a docker container:
 docker stats [container_id]
 ```
 
+To monitor the log file of a docker container:
+
+```
+docker logs -f [container_id]
+```
+
+To stop/restart/start a docker container:
+
+```
+docker stop [container_id]
+docker restart [container_id]
+docker start [container_id]
+```
+
 To view a full list of available commands:
 
 ```
