@@ -222,9 +222,7 @@ Arrow down until you find the following section:
 }
 ```
 
-After you are done, save changes and exit: `Ctrl+ X`
-
-Then confirm saving: `Y`
+After you are done, save changes and exit. Hit: `Ctrl+ X` Then: `Y`
 
 **NOTE:** If SSL Port configured above (ssl > options > port) is within well known ports range (below 1024), you must start Crypti using admin rights:
 
