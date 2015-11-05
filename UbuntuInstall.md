@@ -71,7 +71,7 @@ npm install --production
 
 ## 5. Install Crypti Node
 
-This is a specialized version of Node.js used to execute dapps within a virtual machine. 
+This is a specialized version of Node.js used to execute dapps within a virtual machine.
 
 Download Crypti Node archive to server:
 
@@ -127,7 +127,7 @@ You will see list of working Node.js processes with logs, process ids and indexe
 
 Verify that Crypti has started without any errors and synchronized with the db.
 
-After it starts, open: [http://server_ip:8040/](http://server_ip:8040/), replacing **server_ip** with your public IP address.
+After it starts, open: [http://server_ip:8040/](http://server_ip:8040/), replace **server_ip** with your public IP address.
 
 The Crypti web client should launch successfully.
 
@@ -159,7 +159,7 @@ Set the secret parameter to your account secret phrase.
 
 ```
 "forging": {
-  "secret" : ["YourDelegatePassphrase"]  <- Replace with your delegate passphrase
+  "secret" : ["YourDelegatePassphrase"] <- Replace with your delegate passphrase
 }
 ```
 
@@ -167,7 +167,7 @@ In the forging section you will also see an access property, this is used to all
 
 ```
 "access": {
-  "whiteList": ["127.0.0.1"]  <- Replace with your IP which you will use to access your client
+  "whiteList": ["127.0.0.1"] <- Replace with your IP which you will use to access your client
 }
 ```
 
@@ -175,7 +175,7 @@ To set 2 accounts to forge on a single node, enter both account passphrases like
 
 ```
 "forging": {
-  "secret" : ["YourDelegatePassphrase1","YourDelegatePassphrase2"]  <- Replace with your delegates passphrases
+  "secret" : ["YourDelegatePassphrase1","YourDelegatePassphrase2"] <- Replace with your delegates passphrases
   "access": {
     "whiteList": ["127.0.0.1"]
   }
@@ -190,7 +190,7 @@ Restart Crypti:
 forever restart app.js
 ```
 
-Browse and login to the web client, navigate to "Forging" section, and verify that **Stop Forging** appears in the top right corner. This should show that you are already forging.
+Browse and login to the web client, navigate to "Forging" section, and verify that **Forging (Enabled)** appears in the top left corner.
 
 ## 8. Enable Secure Sockets Layer (SSL)
 
@@ -222,9 +222,7 @@ Arrow down until you find the following section:
 }
 ```
 
-After you are done, save changes and exit: `Ctrl+ X`
-
-Then confirm saving: `Y`
+After you are done, save changes and exit. Hit: `Ctrl+ X` Then: `Y`
 
 **NOTE:** If SSL Port configured above (ssl > options > port) is within well known ports range (below 1024), you must start Crypti using admin rights:
 
