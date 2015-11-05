@@ -70,7 +70,7 @@ Set the secret parameter to your account secret phrase.
 
 ```
 "forging": {
-  "secret" : ["YourDelegatePassphrase"]  <- Replace with your delegate passphrase
+  "secret" : ["YourDelegatePassphrase"] <- Replace with your delegate passphrase
 }
 ```
 

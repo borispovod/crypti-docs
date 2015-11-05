@@ -71,7 +71,7 @@ npm install --production
 
 ## 5. Install Crypti Node
 
-This is a specialized version of Node.js used to execute dapps within a virtual machine. 
+This is a specialized version of Node.js used to execute dapps within a virtual machine.
 
 Download Crypti Node archive to server:
 
@@ -159,7 +159,7 @@ Set the secret parameter to your account secret phrase.
 
 ```
 "forging": {
-  "secret" : ["YourDelegatePassphrase"]  <- Replace with your delegate passphrase
+  "secret" : ["YourDelegatePassphrase"] <- Replace with your delegate passphrase
 }
 ```
 
@@ -167,7 +167,7 @@ In the forging section you will also see an access property, this is used to all
 
 ```
 "access": {
-  "whiteList": ["127.0.0.1"]  <- Replace with your IP which you will use to access your client
+  "whiteList": ["127.0.0.1"] <- Replace with your IP which you will use to access your client
 }
 ```
 
@@ -175,7 +175,7 @@ To set 2 accounts to forge on a single node, enter both account passphrases like
 
 ```
 "forging": {
-  "secret" : ["YourDelegatePassphrase1","YourDelegatePassphrase2"]  <- Replace with your delegates passphrases
+  "secret" : ["YourDelegatePassphrase1","YourDelegatePassphrase2"] <- Replace with your delegates passphrases
   "access": {
     "whiteList": ["127.0.0.1"]
   }
