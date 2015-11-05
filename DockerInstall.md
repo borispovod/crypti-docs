@@ -55,7 +55,7 @@ sudo docker exec -it [container_id] /bin/bash
 Open config.json:
 
 ```
-sudo nano config.json
+export TERM=xterm; sudo nano config.json
 ```
 
 Arrow down until you find the following section:
