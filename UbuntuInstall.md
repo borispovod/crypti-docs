@@ -190,7 +190,7 @@ Restart Crypti:
 forever restart app.js
 ```
 
-Browse and login to the web client, navigate to "Forging" section, and verify that **Stop Forging** appears in the top right corner. This should show that you are already forging.
+Browse and login to the web client, navigate to "Forging" section, and verify that **Forging (Enabled)** appears in the top left corner.
 
 ## 8. Enable Secure Sockets Layer (SSL)
 
