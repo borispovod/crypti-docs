@@ -25,7 +25,7 @@ sudo apt-get install -y docker-engine
 To install and run the latest version of Crypti - Delegate and Developer Edition, simply run the following command:
 
 ```
-docker run -d --restart=always -p 0.0.0.0:8040:8040 cryptichain/node
+sudo docker run -d --restart=always -p 0.0.0.0:8040:8040 cryptichain/node
 ```
 
 **NOTE:** On Windows or Mac OS X, this command is issued from within the Docker Quickstart Terminal.
@@ -41,39 +41,39 @@ The Crypti web client should launch successfully.
 To see a list of running docker containers:
 
 ```
-docker ps -a
+sudo docker ps -a
 ```
 
 To access a bash prompt on a docker container:
 
 ```
-docker exec -it [container_id] /bin/bash
+sudo docker exec -it [container_id] /bin/bash
 ```
 
 To monitor the status of a docker container:
 
 ```
-docker stats [container_id]
+sudo docker stats [container_id]
 ```
 
 To monitor the log file of a docker container:
 
 ```
-docker logs --tail=500 -f [container_id]
+sudo docker logs --tail=500 -f [container_id]
 ```
 
 To stop/restart/start a docker container:
 
 ```
-docker stop [container_id]
-docker restart [container_id]
-docker start [container_id]
+sudo docker stop [container_id]
+sudo docker restart [container_id]
+sudo docker start [container_id]
 ```
 
 To view a full list of available commands:
 
 ```
-docker --help
+sudo docker --help
 ```
 
 For further information on how to install or use Docker, please read the official [Docker Documentation](http://docs.docker.com/).
