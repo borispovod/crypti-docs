@@ -22,13 +22,21 @@ sudo apt-get install -y docker-engine
 
 ## 2. Install Crypti
 
-To install and run the latest version of Crypti - Delegate and Developer Edition, simply run the following command:
+To install and run the latest version of Crypti - Delegate and Developer Edition, simply run the following commands:
+
+Download the docker image:
+
+```
+sudo docker pull cryptichain/node
+```
+
+Install the docker image (executed only once per installation):
 
 ```
 sudo docker run -d --restart=always -p 0.0.0.0:8040:8040 cryptichain/node
 ```
 
-**NOTE:** On Windows or Mac OS X, this command is issued from within the Docker Quickstart Terminal.
+**NOTE:** On Windows or Mac OS X, these commands are issued from within the Docker Quickstart Terminal.
 
 Upon successful completion, you will have a running Crypti node with an up-to-date snapshot of the blockchain. The container is configured to automatically restart upon reboot of the server or any occurrence of an error.
 
