@@ -27,13 +27,13 @@ To install and run the latest version of Crypti - Delegate and Developer Edition
 Download the docker image:
 
 ```
-sudo docker pull cryptichain/node
+docker pull cryptichain/node
 ```
 
 Install the docker image (executed only once per installation):
 
 ```
-sudo docker run -d --restart=always -p 0.0.0.0:8040:8040 cryptichain/node
+docker run -d --restart=always -p 0.0.0.0:8040:8040 cryptichain/node
 ```
 
 **NOTE:** On Windows or Mac OS X, these commands are issued from within the Docker Quickstart Terminal.
@@ -51,19 +51,19 @@ The Crypti web client should launch successfully.
 Get the docker container id:
 
 ```
-sudo docker ps -a
+docker ps -a
 ```
 
 Open a bash prompt on the docker container (replace **[container_id]** with your own id):
 
 ```
-sudo docker exec -it [container_id] /bin/bash
+docker exec -it [container_id] /bin/bash
 ```
 
 Open config.json:
 
 ```
-export TERM=xterm; sudo nano config.json
+export TERM=xterm; nano config.json
 ```
 
 Arrow down until you find the following section:
@@ -112,7 +112,7 @@ exit
 Restart the docker container (replace **[container_id]** with your own id):
 
 ```
-sudo docker restart [container_id]
+docker restart [container_id]
 ```
 
 Browse and login to the web client, navigate to "Forging" section, and verify that **Forging (Enabled)** appears in the top left corner.
@@ -124,19 +124,19 @@ Browse and login to the web client, navigate to "Forging" section, and verify th
 Get the docker container id:
 
 ```
-sudo docker ps -a
+docker ps -a
 ```
 
 Open a bash prompt on the docker container (replace **[container_id]** with your own id):
 
 ```
-sudo docker exec -it [container_id] /bin/bash
+docker exec -it [container_id] /bin/bash
 ```
 
 Open config.json:
 
 ```
-export TERM=xterm; sudo nano config.json
+export TERM=xterm; nano config.json
 ```
 
 Arrow down until you find the following section:
@@ -164,19 +164,19 @@ exit
 Stop the docker container (replace **[container_id]** with your own id):
 
 ```
-sudo docker stop [container_id]
+docker stop [container_id]
 ```
 
 Commit a new docker image (replace **[container_id]** with your own id):
 
 ```
-sudo docker commit [container_id] secure_node
+docker commit [container_id] secure_node
 ```
 
 Run the new docker image:
 
 ```
-sudo docker run -d --restart=always -p 0.0.0.0:8040:8040 0.0.0.0:443:443 secure_node
+docker run -d --restart=always -p 0.0.0.0:8040:8040 0.0.0.0:443:443 secure_node
 ```
 
 Browse to the web client. You should now be able to use a secured connection.
@@ -186,39 +186,39 @@ Browse to the web client. You should now be able to use a secured connection.
 To see a list of running docker containers:
 
 ```
-sudo docker ps -a
+docker ps -a
 ```
 
 To access a bash prompt on a docker container:
 
 ```
-sudo docker exec -it [container_id] /bin/bash
+docker exec -it [container_id] /bin/bash
 ```
 
 To monitor the status of a docker container:
 
 ```
-sudo docker stats [container_id]
+docker stats [container_id]
 ```
 
 To monitor the log file of a docker container:
 
 ```
-sudo docker logs --tail=500 -f [container_id]
+docker logs --tail=500 -f [container_id]
 ```
 
 To stop/restart/start a docker container:
 
 ```
-sudo docker stop [container_id]
-sudo docker restart [container_id]
-sudo docker start [container_id]
+docker stop [container_id]
+docker restart [container_id]
+docker start [container_id]
 ```
 
 To view a full list of available commands:
 
 ```
-sudo docker --help
+docker --help
 ```
 
 For further information on how to install or use Docker, please read the official [Docker Documentation](http://docs.docker.com/).

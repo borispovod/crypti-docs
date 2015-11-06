@@ -144,7 +144,7 @@ forever stop app.js
 Open config.json:
 
 ```
-sudo nano config.json
+nano config.json
 ```
 
 Arrow down until you find the following section:
@@ -205,7 +205,7 @@ forever stop app.js
 Open config.json:
 
 ```
-sudo nano config.json
+nano config.json
 ```
 
 Arrow down until you find the following section:
