@@ -24,7 +24,7 @@ sudo apt-get install -y docker-engine
 
 To install and run the latest version of Crypti - Delegate and Developer Edition, simply run the following commands:
 
-Download the docker image:
+Download the latest docker image:
 
 ```
 docker pull cryptichain/node
@@ -44,7 +44,51 @@ To access the Crypti web client, open: [http://server_ip:8040/](http://server_ip
 
 The Crypti web client should launch successfully.
 
-## 3. Enable Forging
+## 3. Update Crypti
+
+To update to the latest version of Crypti - Delegate and Developer Edition, simply run the following commands:
+
+**WARNING:** The provided instructions will **remove the previous container** and **create a new one**. Please be sure to backup any data before proceeding. See: `docker cp --help` for more information on how to copy files from the container to the host machine.
+
+Get the docker container id:
+
+```
+docker ps -a
+```
+
+Stop the docker container (replace **[container_id]** with your own id):
+
+```
+docker stop [container_id]
+```
+
+Remove the old container (replace **[container_id]** with your own id):
+
+```
+docker rm [container_id]
+```
+
+Download the latest docker image:
+
+```
+docker pull cryptichain/node
+```
+
+Install the docker image (executed only once per installation):
+
+```
+docker run -d --restart=always -p 0.0.0.0:8040:8040 cryptichain/node
+```
+
+Remove any dangling images:
+
+```
+docker rmi $(docker images -q --filter "dangling=true")
+```
+
+Your docker image should now be updated.
+
+## 4. Enable Forging
 
 **NOTE:** You may enable forging through the client or choose to have it automatically enabled every time the client is started. To have this process automated, follow the steps below.
 
@@ -117,7 +161,7 @@ docker restart [container_id]
 
 Browse and login to the web client, navigate to "Forging" section, and verify that **Forging (Enabled)** appears in the top left corner.
 
-## 4. Enable Secure Sockets Layer (SSL)
+## 5. Enable Secure Sockets Layer (SSL)
 
 **NOTE:** To complete this step you require a signed certificate (from a CA) and a public and private key pair.
 
@@ -181,7 +225,7 @@ docker run -d --restart=always -p 0.0.0.0:8040:8040 0.0.0.0:443:443 secure_node
 
 Browse to the web client. You should now be able to use a secured connection.
 
-## 5. Useful Commands
+## 6. Useful Commands
 
 To see a list of running docker containers:
 
@@ -223,7 +267,7 @@ docker --help
 
 For further information on how to install or use Docker, please read the official [Docker Documentation](http://docs.docker.com/).
 
-## 6. Troubleshooting
+## 7. Troubleshooting
 
 If you encounter the following error when running `docker` commands:
 
