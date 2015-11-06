@@ -20,7 +20,7 @@ curl -sL http://downloads.cryptichain.me/setup_docker | sudo -E bash -
 sudo apt-get install -y docker-engine
 ```
 
-### 2. Install Crypti
+## 2. Install Crypti
 
 To install and run the latest version of Crypti - Delegate and Developer Edition, simply run the following command:
 
@@ -36,7 +36,7 @@ To access the Crypti web client, open: [http://server_ip:8040/](http://server_ip
 
 The Crypti web client should launch successfully.
 
-### 3. Enable Forging
+## 3. Enable Forging
 
 **NOTE:** You may enable forging through the client or choose to have it automatically enabled every time the client is started. To have this process automated, follow the steps below.
 
@@ -109,7 +109,7 @@ sudo docker restart [container_id]
 
 Browse and login to the web client, navigate to "Forging" section, and verify that **Forging (Enabled)** appears in the top left corner.
 
-### 4. Useful Commands
+## 4. Useful Commands
 
 To see a list of running docker containers:
 
