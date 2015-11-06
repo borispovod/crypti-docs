@@ -56,16 +56,16 @@ Get the docker container id:
 docker ps -a
 ```
 
-Stop the docker container (replace **[container_id]** with your own id):
+Stop the docker container (replace **container_id** with your own id):
 
 ```
-docker stop [container_id]
+docker stop container_id
 ```
 
-Remove the old container (replace **[container_id]** with your own id):
+Remove the old container (replace **container_id** with your own id):
 
 ```
-docker rm [container_id]
+docker rm container_id
 ```
 
 Download the latest docker image:
@@ -98,10 +98,10 @@ Get the docker container id:
 docker ps -a
 ```
 
-Open a bash prompt on the docker container (replace **[container_id]** with your own id):
+Open a bash prompt on the docker container (replace **container_id** with your own id):
 
 ```
-docker exec -it [container_id] /bin/bash
+docker exec -it container_id /bin/bash
 ```
 
 Open config.json:
@@ -153,10 +153,10 @@ Exit the docker container:
 exit
 ```
 
-Restart the docker container (replace **[container_id]** with your own id):
+Restart the docker container (replace **container_id** with your own id):
 
 ```
-docker restart [container_id]
+docker restart container_id
 ```
 
 Browse and login to the web client, navigate to "Forging" section, and verify that **Forging (Enabled)** appears in the top left corner.
@@ -171,10 +171,10 @@ Get the docker container id:
 docker ps -a
 ```
 
-Open a bash prompt on the docker container (replace **[container_id]** with your own id):
+Open a bash prompt on the docker container (replace **container_id** with your own id):
 
 ```
-docker exec -it [container_id] /bin/bash
+docker exec -it container_id /bin/bash
 ```
 
 Open config.json:
@@ -205,16 +205,16 @@ Exit the docker container:
 exit
 ```
 
-Stop the docker container (replace **[container_id]** with your own id):
+Stop the docker container (replace **container_id** with your own id):
 
 ```
-docker stop [container_id]
+docker stop container_id
 ```
 
-Commit a new docker image (replace **[container_id]** with your own id):
+Commit a new docker image (replace **container_id** with your own id):
 
 ```
-docker commit [container_id] secure_node
+docker commit container_id secure_node
 ```
 
 Run the new docker image:
@@ -236,27 +236,27 @@ docker ps -a
 To access a bash prompt on a docker container:
 
 ```
-docker exec -it [container_id] /bin/bash
+docker exec -it container_id /bin/bash
 ```
 
 To monitor the status of a docker container:
 
 ```
-docker stats [container_id]
+docker stats container_id
 ```
 
 To monitor the log file of a docker container:
 
 ```
-docker logs --tail=500 -f [container_id]
+docker logs --tail=500 -f container_id
 ```
 
 To stop/restart/start a docker container:
 
 ```
-docker stop [container_id]
-docker restart [container_id]
-docker start [container_id]
+docker stop container_id
+docker restart container_id
+docker start container_id
 ```
 
 To view a full list of available commands:
