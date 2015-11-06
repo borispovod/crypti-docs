@@ -222,3 +222,15 @@ docker --help
 ```
 
 For further information on how to install or use Docker, please read the official [Docker Documentation](http://docs.docker.com/).
+
+## 6. Troubleshooting
+
+If you encounter the following error when running `docker` commands:
+
+```
+Cannot connect to the Docker daemon. Is the docker daemon running on this host?
+```
+
+Then please try running each command prefixed with `sudo`. For example: `sudo docker ps -a`.
+
+If this does not work, please check the Docker daemon is running correctly before proceeding.
