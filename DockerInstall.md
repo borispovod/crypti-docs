@@ -109,7 +109,71 @@ sudo docker restart [container_id]
 
 Browse and login to the web client, navigate to "Forging" section, and verify that **Forging (Enabled)** appears in the top left corner.
 
-## 4. Useful Commands
+## 4. Enable Secure Sockets Layer (SSL)
+
+**NOTE:** To complete this step you require a signed certificate (from a CA) and a public and private key pair.
+
+Get the docker container id:
+
+```
+sudo docker ps -a
+```
+
+Open a bash prompt on the docker container (replace **[container_id]** with your own id):
+
+```
+sudo docker exec -it [container_id] /bin/bash
+```
+
+Open config.json:
+
+```
+export TERM=xterm; sudo nano config.json
+```
+
+Arrow down until you find the following section:
+
+```
+"ssl": {
+  "enabled": false,         < Change FROM false TO true
+  "options": {
+    "port": 443,            < Default SSL Port
+    "address": "0.0.0.0",   < Change only if you wish to block web access to the node
+    "key": "path_to_key",   < Replace FROM path_to_key TO actual path to key file
+    "cert": "path_to_cert"  < Replace FROM path_to_cert TO actual path to certificate file
+  }
+}
+```
+
+After you are done, save changes and exit. Hit: `Ctrl+ X` Then: `Y`
+
+Exit the docker container:
+
+```
+exit
+```
+
+Stop the docker container (replace **[container_id]** with your own id):
+
+```
+sudo docker stop [container_id]
+```
+
+Commit a new docker image (replace **[container_id]** with your own id):
+
+```
+sudo docker commit [container_id] secure_node
+```
+
+Run the new docker image:
+
+```
+sudo docker run -d --restart=always -p 0.0.0.0:8040:8040 0.0.0.0:443:443 secure_node
+```
+
+Browse to the web client. You should now be able to use a secured connection.
+
+## 5. Useful Commands
 
 To see a list of running docker containers:
 
