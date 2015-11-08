@@ -6,6 +6,8 @@ Welcome to the Crypti documentation. Please note this documentation is aimed spe
 
 Crypti is a decentralized application platform and crypto-currency, which offers an all round solution for Node.js and JavaScript developers to deploy their own decentralized applications (dapps).
 
+For more information please read our [white paper](https://crypti.me/crypti.pdf).
+
 ## Node Installation
 
 * [Installing Crypti using Docker](DockerInstall.md)
