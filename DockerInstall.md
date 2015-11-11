@@ -101,7 +101,7 @@ docker ps -a
 Open a bash prompt on the docker container (replace **container_id** with your own id):
 
 ```
-docker exec -it container_id /bin/bash
+docker exec -it container_id bash
 ```
 
 Open config.json:
@@ -174,7 +174,7 @@ docker ps -a
 Open a bash prompt on the docker container (replace **container_id** with your own id):
 
 ```
-docker exec -it container_id /bin/bash
+docker exec -it container_id bash
 ```
 
 Open config.json:
@@ -236,7 +236,7 @@ docker ps -a
 To access a bash prompt on a docker container:
 
 ```
-docker exec -it container_id /bin/bash
+docker exec -it container_id bash
 ```
 
 To monitor the status of a docker container:
@@ -272,9 +272,32 @@ For further information on how to install or use Docker, please read the officia
 If you encounter the following error when running `docker` commands:
 
 ```
+cannot enable tty mode on non tty input
+```
+
+Then please try running each command prefixed with `winpty`. For example: `winpty docker ps -a`.
+
+***
+
+If you encounter the following error when running `docker` commands:
+
+```
 Cannot connect to the Docker daemon. Is the docker daemon running on this host?
 ```
 
 Then please try running each command prefixed with `sudo`. For example: `sudo docker ps -a`.
 
 If this does not work, please check the Docker daemon is running correctly before proceeding.
+
+***
+
+If you encounter an error while downloading the docker image, using the `docker pull` command.
+
+Please use the following alternative download method:
+
+```
+curl -o docker_image.tar.gz http://downloads.cryptichain.me/docker_image.tar.gz
+zcat docker_image.tar.gz | docker load
+```
+
+Then proceed with the remainder of the [installation instructions](DockerInstall.md#2-install-crypti).
