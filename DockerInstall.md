@@ -101,7 +101,7 @@ docker ps -a
 Open a bash prompt on the docker container (replace **container_id** with your own id):
 
 ```
-docker exec -it container_id /bin/bash
+docker exec -it container_id bash
 ```
 
 Open config.json:
@@ -174,7 +174,7 @@ docker ps -a
 Open a bash prompt on the docker container (replace **container_id** with your own id):
 
 ```
-docker exec -it container_id /bin/bash
+docker exec -it container_id bash
 ```
 
 Open config.json:
@@ -236,7 +236,7 @@ docker ps -a
 To access a bash prompt on a docker container:
 
 ```
-docker exec -it container_id /bin/bash
+docker exec -it container_id bash
 ```
 
 To monitor the status of a docker container:
