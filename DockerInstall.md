@@ -278,3 +278,16 @@ Cannot connect to the Docker daemon. Is the docker daemon running on this host?
 Then please try running each command prefixed with `sudo`. For example: `sudo docker ps -a`.
 
 If this does not work, please check the Docker daemon is running correctly before proceeding.
+
+***
+
+If you encounter an error while downloading the docker image, using the `docker pull` command.
+
+Please use the following alternative download method:
+
+```
+curl -o docker_image.tar.gz http://downloads.cryptichain.me/docker_image.tar.gz
+zcat docker_image.tar.gz | docker load
+```
+
+Then proceed with the remainder of the [installation instructions](DockerInstall.md#2-install-crypti).
