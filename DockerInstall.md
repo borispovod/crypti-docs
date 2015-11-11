@@ -272,6 +272,16 @@ For further information on how to install or use Docker, please read the officia
 If you encounter the following error when running `docker` commands:
 
 ```
+cannot enable tty mode on non tty input
+```
+
+Then please try running each command prefixed with `winpty`. For example: `winpty docker ps -a`.
+
+***
+
+If you encounter the following error when running `docker` commands:
+
+```
 Cannot connect to the Docker daemon. Is the docker daemon running on this host?
 ```
 
