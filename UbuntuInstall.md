@@ -93,7 +93,21 @@ nodejs/node -v
 
 - Node.js should have the following version number: `v0.12.2`
 
-## 6. Start Crypti
+## 6. Download Blockchain
+
+Download blockchain archive to server:
+
+```
+wget http://downloads.crypti.me/blockchain.db.zip
+```
+
+Unzip the archive:
+
+```
+unzip blockchain.db.zip
+```
+
+## 7. Start Crypti
 
 Install forever, a Node.js process manager:
 
@@ -131,7 +145,7 @@ After it starts, open: [http://server_ip:8040/](http://server_ip:8040/), replace
 
 The Crypti web client should launch successfully.
 
-## 7. Enable Forging
+## 8. Enable Forging
 
 **NOTE:** You may enable forging through the client or choose to have it automatically enabled every time the client started. To have this process automated, follow the steps below.
 
@@ -192,7 +206,7 @@ forever restart app.js
 
 Browse and login to the web client, navigate to "Forging" section, and verify that **Forging (Enabled)** appears in the top left corner.
 
-## 8. Enable Secure Sockets Layer (SSL)
+## 9. Enable Secure Sockets Layer (SSL)
 
 **NOTE:** To complete this step you require a signed certificate (from a CA) and a public and private key pair.
 
@@ -238,7 +252,7 @@ forever start app.js
 
 Browse to the web client. You should now be able to use a secured connection.
 
-## 9. Configure Autostart
+## 10. Configure Autostart
 
 To automatically launch Crypti each time your server restarts:
 
@@ -266,7 +280,7 @@ To automatically launch Crypti each time your server restarts:
 
 **NOTE:** By installing forever-service, you won't have to start Crypti with the command `sudo forever start app.js` anymore!
 
-## 10. Troubleshooting
+## 11. Troubleshooting
 
 If it appears that *forever*, *nodejs* or *your home folder* has been deleted during an update process from an earlier Crypti version, the following errors can occur.
 
