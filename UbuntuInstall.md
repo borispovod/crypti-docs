@@ -98,7 +98,7 @@ nodejs/node -v
 Download blockchain archive to server:
 
 ```
-wget http://downloads.crypti.me/blockchain.db.zip
+wget http://downloads.cryptichain.me/blockchain.db.zip
 ```
 
 Unzip the archive:
