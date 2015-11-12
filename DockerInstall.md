@@ -9,6 +9,17 @@ This tutorial describes how to install the Crypti - Delegate and Developer Editi
 1. Download and install [Docker Toolbox](https://www.docker.com/docker-toolbox) for your operating system.
 2. Open the Docker Quickstart Terminal.
 
+#### PuTTY / SSH Access
+
+You can optionally login to your Docker virtual machine, using [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/) or any other SSH client.
+
+To do so, please use the following credentials:
+
+* Host: `192.168.99.100`
+* Port: `22`
+* Login: `docker`
+* Password: `tcuser`
+
 ### Ubuntu
 
 Log onto your Ubuntu based server and enter the following commands:
