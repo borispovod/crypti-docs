@@ -1,4 +1,4 @@
-# Installing Crypti using Docker
+# Installing Crypti (using Docker)
 
 This tutorial describes how to install the Crypti - Delegate and Developer Edition, using a Docker based container.
 
@@ -24,7 +24,7 @@ To do so, please use the following credentials:
 
 Log onto your Ubuntu based server and enter the following commands:
 
-**NOTE:** The following is only applicable to: **Ubuntu 14.04 (LTS) - 64 bit**.
+**NOTE:** The following is only applicable to: **Ubuntu 14.04 (LTS) - x86_64**.
 
 ```
 curl -sL http://downloads.cryptichain.me/setup_docker | sudo -E bash -
@@ -51,7 +51,7 @@ docker run -d --restart=always -p 0.0.0.0:8040:8040 cryptichain/node
 
 Upon successful completion, you will have a running Crypti node with an up-to-date snapshot of the blockchain. The container is configured to automatically restart upon reboot of the server or any occurrence of an error.
 
-To access the Crypti web client, open: [http://server_ip:8040/](http://server_ip:8040/), replace **server_ip** with your public IP address.
+To access the Crypti web client, open: [http://192.168.99.100:8040/](http://192.168.99.100:8040/), or replace **192.168.99.100** with your public IP address.
 
 The Crypti web client should launch successfully.
 
@@ -101,7 +101,7 @@ Your docker image should now be updated.
 
 ## 4. Enable Forging
 
-**NOTE:** You may enable forging through the client or choose to have it automatically enabled every time the client is started. To have this process automated, follow the steps below.
+To enable forging for one or more delegates, simply follow the below instructions.
 
 Get the docker container id:
 
@@ -137,11 +137,11 @@ Set the secret parameter to your account secret phrase.
 }
 ```
 
-In the forging section you will also see an access property, this is used to allow only your IP address to enable forging through the client.
+(Optional) In the forging section you will also see an access property, this is used to allow only your IP address to enable forging through the web client.
 
 ```
 "access": {
-  "whiteList": ["127.0.0.1"] <- Replace with your IP which you will use to access your client
+  "whiteList": ["127.0.0.1"] <- Replace with the IP which you will use to access your node
 }
 ```
 
@@ -149,7 +149,7 @@ To set 2 accounts to forge on a single node, enter both account passphrases like
 
 ```
 "forging": {
-  "secret" : ["YourDelegatePassphrase1","YourDelegatePassphrase2"] <- Replace with your delegates passphrases
+  "secret" : ["YourDelegatePassphrase1","YourDelegatePassphrase2"] <- Replace with your delegate passphrases
   "access": {
     "whiteList": ["127.0.0.1"]
   }
@@ -170,7 +170,7 @@ Restart the docker container (replace **container_id** with your own id):
 docker restart container_id
 ```
 
-Browse and login to the web client, navigate to "Forging" section, and verify that **Forging (Enabled)** appears in the top left corner.
+Then, open the Crypti web client and wait for the blockchain to load. Once the blockchain has loaded, navigate to "Forging" section, and verify that **Forging (Enabled)** appears in the top left corner.
 
 ## 5. Enable Secure Sockets Layer (SSL)
 
@@ -234,9 +234,11 @@ Run the new docker image:
 docker run -d --restart=always -p 0.0.0.0:8040:8040 0.0.0.0:443:443 secure_node
 ```
 
-Browse to the web client. You should now be able to use a secured connection.
+Open the web client. You should now have an SSL enabled connection.
 
-## 6. Useful Commands
+## 6. Available Commands
+
+Listed below, are the available commands, which can be used to manage your docker container.
 
 To see a list of running docker containers:
 
