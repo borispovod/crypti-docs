@@ -1,8 +1,8 @@
-# Installing Crypti on Ubuntu Linux
+# Installing Crypti (from Source)
 
-This tutorial describes how to install the Crypti - Delegate and Developer Edition, on a Ubuntu based server.
+This tutorial describes how to install the Crypti - Delegate and Developer Edition from source, on a Ubuntu based machine.
 
-**NOTE:** The following is only applicable to: **Ubuntu 14.04 (LTS) - 64 bit**.
+**NOTE:** The following is only applicable to: **Ubuntu 14.04 (LTS) - x86_64**.
 
 ## 1. Install Essentials
 
@@ -45,25 +45,25 @@ npm -v
 
 ## 4. Install Crypti
 
-Download Crypti archive to server:
+Download the Crypti archive:
 
 ```
-wget http://downloads.crypti.me/crypti-node/0.5.x/0.5.2.zip
+wget http://downloads.crypti.me/crypti-node/0.5.x/0.5.3.zip
 ```
 
 Unzip the archive:
 
 ```
-unzip 0.5.2.zip
+unzip 0.5.3.zip
 ```
 
-Go to the Crypti folder:
+Change directory:
 
 ```
-cd 0.5.2
+cd 0.5.3
 ```
 
-Run command:
+Install node modules:
 
 ```
 npm install --production
@@ -73,7 +73,7 @@ npm install --production
 
 This is a specialized version of Node.js used to execute dapps within a virtual machine.
 
-Download Crypti Node archive to server:
+Download the Crypti Node archive:
 
 ```
 wget http://downloads.cryptichain.me/crypti-node.zip
@@ -95,7 +95,7 @@ nodejs/node -v
 
 ## 6. Download Blockchain
 
-Download blockchain archive to server:
+Download the blockchain archive:
 
 ```
 wget http://downloads.cryptichain.me/blockchain.db.zip
@@ -115,7 +115,7 @@ Install forever, a Node.js process manager:
 sudo npm install -g forever
 ```
 
-Next synchronize your server clock:
+Next synchronize your machine's clock:
 
 ```
 sudo service ntp stop
@@ -141,13 +141,15 @@ You will see list of working Node.js processes with logs, process ids and indexe
 
 Verify that Crypti has started without any errors and synchronized with the db.
 
-After it starts, open: [http://server_ip:8040/](http://server_ip:8040/), replace **server_ip** with your public IP address.
+After it starts, open: [http://localhost:8040/](http://localhost:8040/), or replace **localhost** with your public IP address.
 
 The Crypti web client should launch successfully.
 
 ## 8. Enable Forging
 
-**NOTE:** You may enable forging through the client or choose to have it automatically enabled every time the client started. To have this process automated, follow the steps below.
+If you are running your node from a local machine, you can enable forging through the web client, without further interruption. **NOTE:** Should the Crypti node or machine need to be restarted, you will need to re-enable forging again.
+
+If your node is running on a remote machine, or if you want to keep forging persistently enabled, you will need to follow the below instructions.
 
 Stop the running Crypti node:
 
@@ -177,11 +179,11 @@ Set the secret parameter to your account secret phrase.
 }
 ```
 
-In the forging section you will also see an access property, this is used to allow only your IP address to enable forging through the client.
+(Optional) In the forging section you will also see an access property, this is used to allow only your IP address to enable forging through the web client.
 
 ```
 "access": {
-  "whiteList": ["127.0.0.1"] <- Replace with your IP which you will use to access your client
+  "whiteList": ["127.0.0.1"] <- Replace with your IP which you will use to access your node
 }
 ```
 
@@ -189,7 +191,7 @@ To set 2 accounts to forge on a single node, enter both account passphrases like
 
 ```
 "forging": {
-  "secret" : ["YourDelegatePassphrase1","YourDelegatePassphrase2"] <- Replace with your delegates passphrases
+  "secret" : ["YourDelegatePassphrase1","YourDelegatePassphrase2"] <- Replace with your delegate passphrases
   "access": {
     "whiteList": ["127.0.0.1"]
   }
@@ -198,13 +200,13 @@ To set 2 accounts to forge on a single node, enter both account passphrases like
 
 After you have typed in your passphrase. Hit: `Ctrl+ X` Then: `Y`
 
-Restart Crypti:
+Start Crypti:
 
 ```
-forever restart app.js
+forever start app.js
 ```
 
-Browse and login to the web client, navigate to "Forging" section, and verify that **Forging (Enabled)** appears in the top left corner.
+Then, open the Crypti web client and wait for the blockchain to load. Once the blockchain has loaded, navigate to "Forging" section, and verify that **Forging (Enabled)** appears in the top left corner.
 
 ## 9. Enable Secure Sockets Layer (SSL)
 
@@ -238,61 +240,58 @@ Arrow down until you find the following section:
 
 After you are done, save changes and exit. Hit: `Ctrl+ X` Then: `Y`
 
-**NOTE:** If SSL Port configured above (ssl > options > port) is within well known ports range (below 1024), you must start Crypti using admin rights:
+**NOTE:** If SSL Port configured above (ssl > options > port) is within well known ports range (below 1024), you must start Crypti with admin rights:
 
 ```
 sudo forever start app.js
 ```
 
-Else, if the port is above 1023, you can restart Crypti normally:
+If the port is above 1023, you can start Crypti normally:
 
 ```
 forever start app.js
 ```
 
-Browse to the web client. You should now be able to use a secured connection.
+Open the web client. You should now have an SSL enabled connection.
 
 ## 10. Configure Autostart
 
-To automatically launch Crypti each time your server restarts:
+To have Crypti automatically start each time your machine boots:
 
-1. Install forever-service, a Linux tool which automatically launches Node.js scripts after a server restart.
+1. Install forever-service, a Node.js service manager:
 
   ```
   sudo npm install forever-service -g
   ```
 
-2. Go to your Crypti folder and run:
+2. Change to your Crypti folder and run:
 
   ```
   forever-service install crypti
   ```
 
-3. Now you can start, stop and restart Crypti with the following commands.
+Your Crypti node should now automatically start when booting your machine. By installing Crypti as a service, it also allows you to manage your node using the following commands:
 
-  Start: ```sudo start crypti```
-
-  Stop:  ```sudo stop crypti```
-
-  Restart:  ```sudo restart crypti```
-
-  Status:  ```sudo status crypti```
-
-**NOTE:** By installing forever-service, you won't have to start Crypti with the command `sudo forever start app.js` anymore!
+* Start: ```sudo start crypti```
+* Stop:  ```sudo stop crypti```
+* Restart:  ```sudo restart crypti```
+* Status:  ```sudo status crypti```
 
 ## 11. Troubleshooting
 
-If it appears that *forever*, *nodejs* or *your home folder* has been deleted during an update process from an earlier Crypti version, the following errors can occur.
+If one of the following errors occur:
 
   * `bash: /usr/local/bin/forever: No such file or directory`
   * `npm ERR! cb() never called!`
   * `npm ERR! not ok code 0`
 
-You have to make sure that your old Crypti client isn't running anymore. Then follow the these steps:
+It is likely that *forever*, *nodejs* or your *home folder* has been removed.
+
+Please ensure that your old Crypti client isn't running anymore. Then follow the these steps:
 
   1. Run `sudo apt-get clean`
   2. Run `sudo apt-get update`
-  3. Follow the installation guide again (just don't re-install forever!)
+  3. Follow the installation guide again (don't just re-install forever!)
   4. Run `sudo npm cache clear`
   5. Run `sudo npm install -g forever`
 
