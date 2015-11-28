@@ -10,6 +10,8 @@ The following operating systems and architectures are supported:
 
 - [Linux (x86_64)](#linux-x86_64)
 - [Linux (i686)](#linux-i686)
+- [Linux (armv6l)](#linux-armv6l)
+- [Linux (armv7l)](#linux-armv7l)
 - [Darwin (x86_64)](#darwin-x86_64)
 - [FreeBSD (x86_64)](#freebsd-x86_64)
 
@@ -67,6 +69,50 @@ Follow the relevant download instructions for your selected platform as listed b
 
   ```
   cd crypti-0.5.3-Linux-i686
+  ```
+
+4. Proceed with the next step in this tutorial to [Start Crypti](#3-start-crypti).
+
+### Linux (armv6l)
+
+1. Download the archive:
+
+  ```
+  wget http://downloads.cryptichain.me/crypti-0.5.3-Linux-armv6l.zip
+  ```
+
+2. Unzip the archive:
+
+  ```
+  unzip crypti-0.5.3-Linux-armv6l.zip
+  ```
+
+3. Change directory:
+
+  ```
+  cd crypti-0.5.3-Linux-armv6l
+  ```
+
+4. Proceed with the next step in this tutorial to [Start Crypti](#3-start-crypti).
+
+### Linux (armv7l)
+
+1. Download the archive:
+
+  ```
+  wget http://downloads.cryptichain.me/crypti-0.5.3-Linux-armv7l.zip
+  ```
+
+2. Unzip the archive:
+
+  ```
+  unzip crypti-0.5.3-Linux-armv7l.zip
+  ```
+
+3. Change directory:
+
+  ```
+  cd crypti-0.5.3-Linux-armv7l
   ```
 
 4. Proceed with the next step in this tutorial to [Start Crypti](#3-start-crypti).
