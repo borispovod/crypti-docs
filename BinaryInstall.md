@@ -75,6 +75,8 @@ Follow the relevant download instructions for your selected platform as listed b
 
 ### Linux (armv6l)
 
+Tested devices: [Raspberry Pi 1 Model B+](https://www.raspberrypi.org/products/model-b-plus/) / [Raspberry Pi Zero](https://www.raspberrypi.org/products/pi-zero/)
+
 1. Download the archive:
 
   ```
@@ -96,6 +98,8 @@ Follow the relevant download instructions for your selected platform as listed b
 4. Proceed with the next step in this tutorial to [Start Crypti](#3-start-crypti).
 
 ### Linux (armv7l)
+
+Tested devices: [Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/) / [C.H.I.P](http://getchip.com/)
 
 1. Download the archive:
 
