@@ -13,7 +13,7 @@ The following operating systems and architectures are supported:
 - [Linux (armv6l)](#linux-armv6l)
 - [Linux (armv7l)](#linux-armv7l)
 - [Darwin (x86_64)](#darwin-x86_64)
-- [FreeBSD (x86_64)](#freebsd-x86_64)
+- [FreeBSD (amd64)](#freebsd-amd64)
 
 If you are unsure which platform to choose from, open a terminal and run the following command:
 
@@ -143,7 +143,7 @@ Tested devices: [Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/ra
 
 4. Proceed with the next step in this tutorial to [Start Crypti](#3-start-crypti).
 
-### FreeBSD (x86_64)
+### FreeBSD (amd64)
 
 1. Download the archive:
 
