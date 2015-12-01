@@ -148,19 +148,19 @@ Tested devices: [Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/ra
 1. Download the archive:
 
   ```
-  wget http://downloads.cryptichain.me/crypti-0.5.3-FreeBSD-x86_64.zip
+  wget http://downloads.cryptichain.me/crypti-0.5.3-FreeBSD-amd64.zip
   ```
 
 2. Unzip the archive:
 
   ```
-  unzip crypti-0.5.3-FreeBSD-x86_64.zip
+  unzip crypti-0.5.3-FreeBSD-amd64.zip
   ```
 
 3. Change directory:
 
   ```
-  cd crypti-0.5.3-FreeBSD-x86_64
+  cd crypti-0.5.3-FreeBSD-amd64
   ```
 
 4. Proceed with the next step in this tutorial to [Start Crypti](#3-start-crypti).
