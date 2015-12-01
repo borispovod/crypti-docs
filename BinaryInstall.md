@@ -10,8 +10,10 @@ The following operating systems and architectures are supported:
 
 - [Linux (x86_64)](#linux-x86_64)
 - [Linux (i686)](#linux-i686)
+- [Linux (armv6l)](#linux-armv6l)
+- [Linux (armv7l)](#linux-armv7l)
 - [Darwin (x86_64)](#darwin-x86_64)
-- [FreeBSD (x86_64)](#freebsd-x86_64)
+- [FreeBSD (amd64)](#freebsd-amd64)
 
 If you are unsure which platform to choose from, open a terminal and run the following command:
 
@@ -71,6 +73,54 @@ Follow the relevant download instructions for your selected platform as listed b
 
 4. Proceed with the next step in this tutorial to [Start Crypti](#3-start-crypti).
 
+### Linux (armv6l)
+
+Tested devices: [Raspberry Pi 1 Model B+](https://www.raspberrypi.org/products/model-b-plus/) / [Raspberry Pi Zero](https://www.raspberrypi.org/products/pi-zero/)
+
+1. Download the archive:
+
+  ```
+  wget http://downloads.cryptichain.me/crypti-0.5.3-Linux-armv6l.zip
+  ```
+
+2. Unzip the archive:
+
+  ```
+  unzip crypti-0.5.3-Linux-armv6l.zip
+  ```
+
+3. Change directory:
+
+  ```
+  cd crypti-0.5.3-Linux-armv6l
+  ```
+
+4. Proceed with the next step in this tutorial to [Start Crypti](#3-start-crypti).
+
+### Linux (armv7l)
+
+Tested devices: [Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/) / [C.H.I.P](http://getchip.com/)
+
+1. Download the archive:
+
+  ```
+  wget http://downloads.cryptichain.me/crypti-0.5.3-Linux-armv7l.zip
+  ```
+
+2. Unzip the archive:
+
+  ```
+  unzip crypti-0.5.3-Linux-armv7l.zip
+  ```
+
+3. Change directory:
+
+  ```
+  cd crypti-0.5.3-Linux-armv7l
+  ```
+
+4. Proceed with the next step in this tutorial to [Start Crypti](#3-start-crypti).
+
 ### Darwin (x86_64)
 
 1. Download the archive:
@@ -93,7 +143,7 @@ Follow the relevant download instructions for your selected platform as listed b
 
 4. Proceed with the next step in this tutorial to [Start Crypti](#3-start-crypti).
 
-### FreeBSD (x86_64)
+### FreeBSD (amd64)
 
 1. Download the archive:
 
