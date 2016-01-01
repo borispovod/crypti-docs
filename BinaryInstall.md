@@ -99,7 +99,7 @@ Tested devices: [Raspberry Pi 1 Model B+](https://www.raspberrypi.org/products/m
 
 ### Linux (armv7l)
 
-Tested devices: [Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/) / [C.H.I.P](http://getchip.com/)
+Tested devices: [Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/) / [C.H.I.P.](http://getchip.com/)
 
 1. Download the archive:
 
