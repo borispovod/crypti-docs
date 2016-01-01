@@ -40,27 +40,27 @@ node -v
 npm -v
 ```
 
-- Node.js should have the following version number: `v0.12.7`
-- npm should have the following version number: `2.11.3`
+- Node.js should have the following version number: `v0.12.9`
+- npm should have the following version number: `2.14.9`
 
 ## 4. Install Crypti
 
 Download the Crypti archive:
 
 ```
-wget http://downloads.crypti.me/crypti-node/0.5.x/0.5.3.zip
+wget http://downloads.crypti.me/crypti-node/0.5.x/0.5.4.zip
 ```
 
 Unzip the archive:
 
 ```
-unzip 0.5.3.zip
+unzip 0.5.4.zip
 ```
 
 Change directory:
 
 ```
-cd 0.5.3
+cd 0.5.4
 ```
 
 Install node modules:
