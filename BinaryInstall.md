@@ -34,19 +34,19 @@ Follow the relevant download instructions for your selected platform as listed b
 1. Download the archive:
 
   ```
-  wget http://downloads.cryptichain.me/crypti-0.5.3-Linux-x86_64.zip
+  wget http://downloads.cryptichain.me/crypti-0.5.4-Linux-x86_64.zip
   ```
 
 2. Unzip the archive:
 
   ```
-  unzip crypti-0.5.3-Linux-x86_64.zip
+  unzip crypti-0.5.4-Linux-x86_64.zip
   ```
 
 3. Change directory:
 
   ```
-  cd crypti-0.5.3-Linux-x86_64
+  cd crypti-0.5.4-Linux-x86_64
   ```
 
 4. Proceed with the next step in this tutorial to [Start Crypti](#3-start-crypti).
@@ -56,19 +56,19 @@ Follow the relevant download instructions for your selected platform as listed b
 1. Download the archive:
 
   ```
-  wget http://downloads.cryptichain.me/crypti-0.5.3-Linux-i686.zip
+  wget http://downloads.cryptichain.me/crypti-0.5.4-Linux-i686.zip
   ```
 
 2. Unzip the archive:
 
   ```
-  unzip crypti-0.5.3-Linux-i686.zip
+  unzip crypti-0.5.4-Linux-i686.zip
   ```
 
 3. Change directory:
 
   ```
-  cd crypti-0.5.3-Linux-i686
+  cd crypti-0.5.4-Linux-i686
   ```
 
 4. Proceed with the next step in this tutorial to [Start Crypti](#3-start-crypti).
@@ -80,19 +80,19 @@ Tested devices: [Raspberry Pi 1 Model B+](https://www.raspberrypi.org/products/m
 1. Download the archive:
 
   ```
-  wget http://downloads.cryptichain.me/crypti-0.5.3-Linux-armv6l.zip
+  wget http://downloads.cryptichain.me/crypti-0.5.4-Linux-armv6l.zip
   ```
 
 2. Unzip the archive:
 
   ```
-  unzip crypti-0.5.3-Linux-armv6l.zip
+  unzip crypti-0.5.4-Linux-armv6l.zip
   ```
 
 3. Change directory:
 
   ```
-  cd crypti-0.5.3-Linux-armv6l
+  cd crypti-0.5.4-Linux-armv6l
   ```
 
 4. Proceed with the next step in this tutorial to [Start Crypti](#3-start-crypti).
@@ -104,19 +104,19 @@ Tested devices: [Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/ra
 1. Download the archive:
 
   ```
-  wget http://downloads.cryptichain.me/crypti-0.5.3-Linux-armv7l.zip
+  wget http://downloads.cryptichain.me/crypti-0.5.4-Linux-armv7l.zip
   ```
 
 2. Unzip the archive:
 
   ```
-  unzip crypti-0.5.3-Linux-armv7l.zip
+  unzip crypti-0.5.4-Linux-armv7l.zip
   ```
 
 3. Change directory:
 
   ```
-  cd crypti-0.5.3-Linux-armv7l
+  cd crypti-0.5.4-Linux-armv7l
   ```
 
 4. Proceed with the next step in this tutorial to [Start Crypti](#3-start-crypti).
@@ -126,19 +126,19 @@ Tested devices: [Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/ra
 1. Download the archive:
 
   ```
-  wget http://downloads.cryptichain.me/crypti-0.5.3-Darwin-x86_64.zip
+  wget http://downloads.cryptichain.me/crypti-0.5.4-Darwin-x86_64.zip
   ```
 
 2. Unzip the archive:
 
   ```
-  unzip crypti-0.5.3-Darwin-x86_64.zip
+  unzip crypti-0.5.4-Darwin-x86_64.zip
   ```
 
 3. Change directory:
 
   ```
-  cd crypti-0.5.3-Darwin-x86_64
+  cd crypti-0.5.4-Darwin-x86_64
   ```
 
 4. Proceed with the next step in this tutorial to [Start Crypti](#3-start-crypti).
@@ -148,19 +148,19 @@ Tested devices: [Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/ra
 1. Download the archive:
 
   ```
-  wget http://downloads.cryptichain.me/crypti-0.5.3-FreeBSD-amd64.zip
+  wget http://downloads.cryptichain.me/crypti-0.5.4-FreeBSD-amd64.zip
   ```
 
 2. Unzip the archive:
 
   ```
-  unzip crypti-0.5.3-FreeBSD-amd64.zip
+  unzip crypti-0.5.4-FreeBSD-amd64.zip
   ```
 
 3. Change directory:
 
   ```
-  cd crypti-0.5.3-FreeBSD-amd64
+  cd crypti-0.5.4-FreeBSD-amd64
   ```
 
 4. Proceed with the next step in this tutorial to [Start Crypti](#3-start-crypti).
