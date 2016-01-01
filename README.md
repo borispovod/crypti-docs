@@ -17,7 +17,7 @@ For more information please read our [white paper](https://crypti.me/crypti.pdf)
 ## Node API
 
 * [Crypti 0.3.2 API Documentation](http://docs.crypti.apiary.io/)
-* [Crypti 0.5.3 API Documentation](http://docs.crypti2.apiary.io/)
+* [Crypti 0.5.4 API Documentation](http://docs.crypti2.apiary.io/)
 
 ## Dapps Development
 
